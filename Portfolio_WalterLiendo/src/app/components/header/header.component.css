@@ -1,0 +1,9 @@
+div {
+    border-radius: 0 0 32px 0;
+    background: #00358e;
+}
+
+app-social {
+    float: right;
+    margin-top: 25px;
+}
