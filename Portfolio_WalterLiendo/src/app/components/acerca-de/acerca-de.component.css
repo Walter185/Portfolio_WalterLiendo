@@ -1,0 +1,49 @@
+img {
+ width: 150px;
+ box-shadow: 3px 3px 3px white;
+ margin-top: -20px;
+
+}
+
+ .row {
+     width: auto;
+ }
+div {
+color:black;
+text-align:center;
+margin-top: 160px;
+background-color: #00358e;
+}
+
+#nombre {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ffff;
+    font-weight: lighter;
+    margin-left: 50px;
+}
+#titulo {
+    margin-left: 50px;
+}
+
+#parrafo {
+    color: #ffff;
+    margin-right: 20px;
+}
+@media (min-width: 500px) {
+    #fotodeperfil{
+        position: absolute;
+        width: 15%;
+        left: 3%;
+        top: 230px;
+    }
+}
+@media (max-width: 499px) {
+    #fotodeperfil{
+        position: absolute;
+        width: 15%;
+        width: 100px;
+        border-radius: 100%;
+        left: 37%;
+        top: 160px;
+    }
+}
