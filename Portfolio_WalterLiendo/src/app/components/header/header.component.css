@@ -8,3 +8,10 @@ app-social {
     float: right;
     margin-top: 25px;
 }
+
+h3 {
+    display: inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: medium;
+}
