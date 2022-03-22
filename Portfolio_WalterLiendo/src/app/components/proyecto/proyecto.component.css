@@ -1,0 +1,10 @@
+.row {
+padding: 20px;
+margin-left: 12px;
+    background-color: rgba(250, 203, 73, 0.733);
+    display: inline-table;
+}
+.img {
+ display: flex;
+ text-align: center;
+}
