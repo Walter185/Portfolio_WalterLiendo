@@ -1,5 +1,6 @@
 .row {
     background-color: rgb(212, 239, 248);
     padding: 20px;
-margin-left: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
 }
