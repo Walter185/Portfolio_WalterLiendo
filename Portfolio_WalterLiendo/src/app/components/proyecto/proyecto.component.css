@@ -1,10 +1,14 @@
 .row {
-padding: 20px;
-margin-left: 12px;
+    padding: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
     background-color: rgba(250, 203, 73, 0.733);
-    display: inline-table;
+    display: inline-block;
 }
 .img {
- display: flex;
- text-align: center;
+   text-align: center;
+
+}
+#foto1,#foto2 {
+   box-shadow: 10px 10px 30px #000000;
 }
