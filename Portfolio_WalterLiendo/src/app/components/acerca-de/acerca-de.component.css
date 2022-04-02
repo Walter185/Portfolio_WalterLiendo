@@ -29,15 +29,22 @@ margin-top: 280px;
     text-align: center;
 }
 
-@media only screen  and (max-width: 800px) {
+@media (min-width: 576px) {
     #fotodeperfil{
-        width: 100px;
-       position: relative
+       width: 15%;
+       position:absolute;
+       margin-left: 20px;
+       margin-top: -200px;
+       display: flex;
+      
     }
 }
-@media only screen  and (min-width: 799px) {
+@media (max-width: 575px) {
     #fotodeperfil{
-        display: flex;
+        width: 120px;
         border-radius: 50%;
+        position: absolute;
+        margin-top: -190px;
+        margin-left: -60px;
 }
 }
