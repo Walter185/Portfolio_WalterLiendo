@@ -28,7 +28,13 @@ h4 {
 .redes img {
     margin: 0.5em;
 }
+
 @media screen and (max-width: 800px) {
-    .row{
-        display: block;
-    }}
+.container { 
+    display:contents;
+    justify-content:baseline;
+}
+.container{
+    width:fit-content;
+}
+}
