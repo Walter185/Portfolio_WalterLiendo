@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./logo-ap.component.css']
 })
 export class LogoAPComponent implements OnInit {
-
+  title:string = '#YoProgramo 2da edición';
   constructor() { }
 
   ngOnInit(): void {

@@ -2,7 +2,7 @@
     padding: 20px;
     margin-left: 12px;
     margin-right: 12px;
-    background-color: rgba(250, 203, 73, 0.733);
+    background: radial-gradient(circle,#fff, #bbb );
     display: inline-block;
 }
 .img {
