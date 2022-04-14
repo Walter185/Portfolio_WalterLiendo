@@ -1,8 +1,8 @@
 img {
- width: 200px;
+ width: 180px;
  box-shadow: 3px 3px 3px rgb(243, 231, 66);
- margin-left: 25px;
- margin-top: -80px;
+ margin-top: -160px;
+ margin-left: 15px;
 }
 
 .row {
@@ -10,33 +10,44 @@ color:black;
 text-align:center;
 background-color: #00358e;
 margin-top: 280px;
+display: grid;
+grid-template-columns: repeat (3, 1fr);
+}
+
+.row .foto {
+    grid-column: 1;
+}
+.row .titulo {
+    grid-column: 2;
+}
+.row .acercade {
+    grid-column: 3;
 }
 
 #nombre {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #ffff;
     font-weight: lighter;
+   text-shadow: 4px 4px 8px #1f2020;
 }
 
-.span {
-    margin-right: 10px;
-}
 
 #parrafo {
     color: #ffff;
-    margin-right: 20px;
+    margin-right: 25px;
     text-align: center;
 }
 
-@media only screen  and (max-width: 800px) {
-    #fotodeperfil{
-        width: 100px;
-       position: relative
+@media screen and (max-width: 800px) {
+    .row{
+        display: block;
     }
+    #parrafo {
+        margin-left: 10px;
+    }
+    
+#fotodeperfil {
+    border-radius: 50% 50% 50% 50%;
 }
-@media only screen  and (min-width: 799px) {
-    #fotodeperfil{
-        display: flex;
-        border-radius: 50%;
-}
+
 }

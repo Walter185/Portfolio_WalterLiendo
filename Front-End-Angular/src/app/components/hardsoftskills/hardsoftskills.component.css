@@ -1,4 +1,15 @@
 .row {
-    background-color: rgb(212, 239, 248);
-    padding: 20px;
+    background-color: rgb(240, 241, 245);
+    padding: 10px;
+    margin-left: 12px;
+    margin-right: 12px;
+    box-sizing: content-box;
+
 }
+/*
+@media screen and (max-width:800px) {
+    display: flex;
+    flex-wrap: wrap;
+    wrap-direction: columns;
+    align-items: center;
+}*/
