@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LogoAPComponent } from './components/logo-ap/logo-ap.component';
 import { BannerComponent } from './components/banner/banner.component';
-import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
+import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
@@ -21,7 +21,7 @@ import { FooterComponent } from './components/footer/footer.component';
     HeaderComponent,
     LogoAPComponent,
     BannerComponent,
-    AcercaDeComponent,
+    AboutmeComponent,
     ExperienciaComponent,
     EducacionComponent,
     HardsoftskillsComponent,
