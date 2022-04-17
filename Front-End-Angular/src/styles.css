@@ -22,7 +22,10 @@ section {
 }
 
 li {
-  list-style: none;
+  list-style:none;
+}
+#bold{
+ font-size: small;
 }
 
 body {
@@ -130,10 +133,7 @@ inspt {
 
 
 #profile-pfp {
-  border-radius: 75% 75% 75%;
-  width: 150px;
-  height: 200px;
-  margin-left: -10px;
+  border-radius: 50%;
   margin-top: -180px;
   z-index: 1;
   box-shadow: 0px 5px 0px rgba(81, 71, 139, 0.171);

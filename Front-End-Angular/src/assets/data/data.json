@@ -1,12 +1,12 @@
 {
     "name": "Walter R Liendo",
     "bannerImage": "https://www.alvearicon.com/resources/img/hero1.jpg",
-    "profilePicture": "https://scontent.faep14-2.fna.fbcdn.net/v/t39.30808-6/275918286_107415865238458_4806998687636731810_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=V3VR5JAUmqoAX_5qKSi&_nc_ht=scontent.faep14-2.fna&oh=00_AT8HnbxigElWzwWqRKSSrnfNimYRHbhAJ0C0AUTbTBUOSw&oe=62614EB6",
+    "profilePicture": "https://scontent.faep14-2.fna.fbcdn.net/v/t39.30808-6/278727065_120680677245310_3246211353164006155_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=xBbOLAnY8QsAX9olL-j&_nc_ht=scontent.faep14-2.fna&oh=00_AT9Gf9MgxA66mI3xnYQCL14ttkYaDIHhG4XDqqeoI_tqdA&oe=6261ABDA",
     "ocupation": "Full Stack Web Developer Jr",
     "location": "Ciudad Autónoma de Buenos Aires, Argentina",
     "institution": "INSPT",
     "institutionImage": "https://argentinalegal.net/wp-content/uploads/2020/05/Que-es-utn.png",
-    "about": "Soy una persona emprendedora, proactiva y con mucha experiencia en el rubro hotelero encargándome del manejo y resolución de problemas. He trabajado en hoteles de lujo en Argentina y Estados Unidos. Mi meta es poder crear, usando mis conocimientos, herramientas que simplifiquen las tareas de los diferentes sectores de empresas o Pymes que interactúan con el público en general. Ayudando de esta forma a completar los requerimientos solicitados en menor tiempo, ahorrando energía y recursos. Garantizando así la satisfacción del cliente, y manteniendo el nivel de atención por encima de lo esperado.",
+    "about": "Mi meta es poder crear, usando mis conocimientos, herramientas que simplifiquen las tareas de los diferentes sectores de empresas o Pymes que interactúan con el público en general. Ayudando de esta forma a completar los requerimientos solicitados en menor tiempo, ahorrando energía y recursos. Garantizando así la satisfacción del cliente, y manteniendo el nivel de atención por encima de lo esperado.",
 
     "education": [
         {
@@ -17,7 +17,7 @@
         },
         {
             "degree": "Técnico en Informática Aplicada",
-            "school": "Instituto Nacional Superior del Profesorado Técnico - Universidad Tecnológica Nacional",
+            "school": "Instituto Nacional Superior del Profesorado Técnico - UTN",
             "period": "Marzo 1996 - Diciembre 1997",
             "otherInformation": "Lenguajes usados PASCAL - COBOL - C++"
         },
@@ -33,17 +33,35 @@
             "ocupation": "Programa de Supervición de Recepción",
             "place": "JW Marriott Orlando Grandes Lakes, Orlando",                                                      
             "period": "Enero 2008 - Enero 2009",
-            "description": "Programas usado MARSHA (exclusivo de Marriott International)"
+            "description": "Programas usado MARSHA (exclusivo Marriott)"
+        },
+        {
+            "ocupation": "Programa de Supervición de Recepción",
+            "place": "JW Marriott Orlando Grandes Lakes, Orlando",                                                      
+            "period": "Enero 2008 - Enero 2009",
+            "description": "Programas usado MARSHA (exclusivo Marriott)"
+        },
+        {
+            "ocupation": "Front Desk Concierge",
+            "place": "Marriott Plaza Hotel Buenos Aires",                                                      
+            "period": "Enero 2011 - Abril 2017",
+            "description": "Cierre de Hotel por cambio de firma, es comprado por Grupo Alvear"
+        },
+        {
+            "ocupation": "Front Desk Concierge",
+            "place": "Alvear Icon Hotel Puerto Madero",                                                      
+            "period": "Mayo 2017 - Marzo 2020",
+            "description": "Paticipe en la inauguración del Hotel"
         }
     ],
     "hardskills": [
         {
             "name": "HTML",
-            "level": 75
+            "level": 85
         },
         {
             "name": "CSS",
-            "level": 65
+            "level": 75
         },
         {
             "name": "Java",
@@ -51,33 +69,32 @@
         },
         {
             "name": "MySQL",
-            "level": 60
+            "level": 80
         }
     ],
     "softskills": {
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi cum quasi, minus nemo vero eum aspernatur eos sapiente eius maxime dolores deleniti in, itaque quos velit corporis recusandae iusto expedita? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, iure officiis? Nesciunt possimus earum eligendi laboriosam quos adipisci rem, assumenda fugit alias similique, excepturi aspernatur, vel praesentium? Voluptas, libero voluptatum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi cum quasi, minus nemo vero eum aspernatur eos sapiente eius maxime dolores deleniti in, itaque quos velit corporis recusandae iusto expedita? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, iure officiis? Nesciunt possimus earum eligendi laboriosam quos adipisci rem, assumenda fugit alias similique, excepturi aspernatur, vel praesentium? Voluptas, libero voluptatum."
+        "description": "Soy una persona emprendedora, proactiva y con mucha experiencia en el rubro de atención al cliente, encargándome del manejo y resolución de problemas."
     },
     "projects": [
         {
-            "name": "Proyecto Portfolio: Argentina Programa",
-            "description": "Proyecto realizado como práctica para la segunda etapa de Argentina Programa, #YoProgramo",
-            "linkLiveDemo": "https://k-cr.github.io/portfolio-unidad2-AP/",
-            "linkSourceCode": "https://github.com/k-cr/portfolio-unidad2-AP",
-            "projectImage": "https://wisdomit.pt/wp-content/uploads/2020/08/8-Misconceptions-About-Programmers-That-Will-Change-Your-Opinion-About-Them_4.jpg"
+            "name": "Proyecto Mainero - Maquinarias Agricolas (En proceso de contrucción)",
+            "description": "La línea más completa de equipos para la cosecha, reserva y distribución de forrajes de América Latina con repuestos legítimos y servicio Post-venta.",
+            "linkLiveDemo": "blank",
+            "linkSourceCode": "blank",
+            "projectImage": "https://www.mainero.com/es/wp-content/uploads/2021/08/Tolva-III.jpg"
         },
         {
             "name": "Proyecto Portfolio: Argentina Programa",
-            "description": "Proyecto realizado como práctica para la segunda etapa de Argentina Programa, #YoProgramo",
-            "linkLiveDemo": "https://k-cr.github.io/portfolio-unidad2-AP/",
-            "linkSourceCode": "https://github.com/k-cr/portfolio-unidad2-AP",
-            "projectImage": "https://wisdomit.pt/wp-content/uploads/2020/08/8-Misconceptions-About-Programmers-That-Will-Change-Your-Opinion-About-Them_4.jpg"
+            "description": "Proyecto Integrador realizado para la segunda etapa del Argentina Programa: #YoProgramo",
+            "linkLiveDemo": "https://github.com/Walter185/Portfolio_WalterLiendo",
+            "linkSourceCode": "https://github.com/Walter185/Portfolio_WalterLiendo",
+            "projectImage": "https://www.alvearicon.com/resources/img/hero1.jpg"
         },
         {
-            "name": "Proyecto Portfolio: Argentina Programa",
-            "description": "Proyecto realizado como práctica para la segunda etapa de Argentina Programa, #YoProgramo",
-            "linkLiveDemo": "https://k-cr.github.io/portfolio-unidad2-AP/",
-            "linkSourceCode": "https://github.com/k-cr/portfolio-unidad2-AP",
-            "projectImage": "https://wisdomit.pt/wp-content/uploads/2020/08/8-Misconceptions-About-Programmers-That-Will-Change-Your-Opinion-About-Them_4.jpg"
+            "name": "Proyecto AYS - At Your Service (En proceso de contrucción)",
+            "description": "AYS es un programa confeccionado con el fin de cumplir con los standares de servicio de un Hotel de lujo. Con AYS se puede llevar un registro exacto de pedidos realizados por el huesped, pudiendo hacerle seguimiento a los pedidos, y corroborando el cumplimiento de los mismos. Usted puede llevar un historial de servicios consumidos, hacer estadisticas, y controlar stock de los amenities consumidos.",
+            "linkLiveDemo": "blank",
+            "linkSourceCode": "blank",
+            "projectImage": "https://cdn.euroinnova.edu.es/img/subidasEditor/atenci%C3%B3n%20telef%C3%B3nica%20que%20es-1604573111.webp"
         }
-    ]
-}
+    ]}
