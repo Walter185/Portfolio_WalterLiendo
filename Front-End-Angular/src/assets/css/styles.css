@@ -112,8 +112,9 @@ body {
 
 #profile-pfp {
     border-radius: 50%;
-    width: 152px;
-    height: 152px;
+    display: flex;
+    height: 150px;
+    width: 120px;
     margin-left: -10px;
     margin-top: -110px;
     z-index: 1;
@@ -233,7 +234,7 @@ body {
     position: relative;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     margin-top: 20px;
 }
 
@@ -243,10 +244,12 @@ body {
 }
 
 .skills .content .col-right {
-    position: relative;
+    position:relative;
     width: 46%;
 }
-
+.habilidades {
+    align-items: center;
+}
 /*
 .skills .content .col-right .bar {
     margin-bottom: 15px;
@@ -321,9 +324,11 @@ body {
 
 @media (max-width: 411px) {
     .pd-right button:nth-child(1),
-    .pd-right button:nth-child(2) {
+    .pd-right button:nth-child(2),
+    .curso {
         display: none;
     }
+    
 }
 
 @media (max-width: 768px) {
@@ -354,7 +359,7 @@ body {
         width: 100%;
     }
 
-    .about .content .col-right {
+    .about .content .col-right .col-left {
         margin-top: 40px;
     }
 
@@ -373,7 +378,7 @@ body {
         width: 100%;
     }
 
-    .skills .content .col-right {
+    .skills .content .col-right .col-left{
         margin-top: 40px;
     }
 }

@@ -114,8 +114,10 @@ img {
 #logoAP {
   width: 160px;
 }
-inspt {
-  width: 200px;
+ 
+footer {
+width: auto;
+text-align: center;
 }
 /* =============== Main =========== */
 

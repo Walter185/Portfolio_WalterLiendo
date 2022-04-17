@@ -1,12 +1,12 @@
 {
     "name": "Walter R Liendo",
     "bannerImage": "https://www.alvearicon.com/resources/img/hero1.jpg",
-    "profilePicture": "https://scontent.faep14-2.fna.fbcdn.net/v/t39.30808-6/278727065_120680677245310_3246211353164006155_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=xBbOLAnY8QsAX9olL-j&_nc_ht=scontent.faep14-2.fna&oh=00_AT9Gf9MgxA66mI3xnYQCL14ttkYaDIHhG4XDqqeoI_tqdA&oe=6261ABDA",
+    "profilePicture": "https://scontent.faep14-2.fna.fbcdn.net/v/t39.30808-6/275918286_107415865238458_4806998687636731810_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=V3VR5JAUmqoAX_5qKSi&_nc_ht=scontent.faep14-2.fna&oh=00_AT8HnbxigElWzwWqRKSSrnfNimYRHbhAJ0C0AUTbTBUOSw&oe=62614EB6",
     "ocupation": "Full Stack Web Developer Jr",
     "location": "Ciudad Autónoma de Buenos Aires, Argentina",
     "institution": "INSPT",
     "institutionImage": "https://argentinalegal.net/wp-content/uploads/2020/05/Que-es-utn.png",
-    "about": "Mi meta es poder crear, usando mis conocimientos, herramientas que simplifiquen las tareas de los diferentes sectores de empresas o Pymes que interactúan con el público en general. Ayudando de esta forma a completar los requerimientos solicitados en menor tiempo, ahorrando energía y recursos. Garantizando así la satisfacción del cliente, y manteniendo el nivel de atención por encima de lo esperado.",
+    "about": "Soy una persona emprendedora, proactiva y con mucha experiencia en el rubro hotelero encargándome del manejo y resolución de problemas. He trabajado en hoteles de lujo en Argentina y Estados Unidos. Mi meta es poder crear, usando mis conocimientos, herramientas que simplifiquen las tareas de los diferentes sectores de empresas o Pymes que interactúan con el público en general. Ayudando de esta forma a completar los requerimientos solicitados en menor tiempo, ahorrando energía y recursos. Garantizando así la satisfacción del cliente, y manteniendo el nivel de atención por encima de lo esperado.",
 
     "education": [
         {
@@ -66,19 +66,27 @@
         {
             "name": "Java",
             "level": 70
-        },
-        {
-            "name": "MySQL",
-            "level": 80
         }
     ],
-    "softskills": {
-        "description": "Soy una persona emprendedora, proactiva y con mucha experiencia en el rubro de atención al cliente, encargándome del manejo y resolución de problemas."
-    },
+    "softskills":  [
+        {
+            "name": "HTML",
+            "level": 85
+        },
+        {
+            "name": "CSS",
+            "level": 75
+        },
+        {
+            "name": "Java",
+            "level": 70
+        }
+    ],
+
     "projects": [
         {
             "name": "Proyecto Mainero - Maquinarias Agricolas (En proceso de contrucción)",
-            "description": "La línea más completa de equipos para la cosecha, reserva y distribución de forrajes de América Latina con repuestos legítimos y servicio Post-venta.",
+            "description": "La línea más completa de equipos para la cosecha, reserva y distribución de forrajes de América Latina con repuestos legítimos y servicio Post-venta. Seguimiento de Stock / inventario / Clientes y Facturación.",
             "linkLiveDemo": "blank",
             "linkSourceCode": "blank",
             "projectImage": "https://www.mainero.com/es/wp-content/uploads/2021/08/Tolva-III.jpg"
@@ -97,4 +105,5 @@
             "linkSourceCode": "blank",
             "projectImage": "https://cdn.euroinnova.edu.es/img/subidasEditor/atenci%C3%B3n%20telef%C3%B3nica%20que%20es-1604573111.webp"
         }
-    ]}
+    ]
+}
