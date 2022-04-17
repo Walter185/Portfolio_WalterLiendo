@@ -1,73 +1,77 @@
 {
-    "name": "Cristian Ramos",
-    "bannerImage": "https://www.fg-a.com/facebook-images/mountain-lake.jpg",
-    "profilePicture": "https://scontent.frgl4-1.fna.fbcdn.net/v/t1.6435-9/78532755_2549687198597559_3558387332518248448_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeGx1QHiuGzrpXtgRwxj3HmCRe-4YI1UKWxF77hgjVQpbH4W-K6WH-JaMxRiiDWlQzZvX0c2eC3WeJSWkzIjEMwN&_nc_ohc=ds8bCThVFwgAX929iZr&_nc_ht=scontent.frgl4-1.fna&oh=00_AT_voslNzYzQGER27vsZA54_HYfXqC3KL27ik1F5x9Gwdg&oe=62506684",
+    "name": "Walter Liendo",
+    "bannerImage": "https://th.bing.com/th/id/R.2cfd850653f3ca1703d56fa8bf572a3d?rik=%2bOSsi%2bov8t64cQ&pid=ImgRaw&r=0",
+    "profilePicture": "https://scontent.faep14-2.fna.fbcdn.net/v/t39.30808-6/275918286_107415865238458_4806998687636731810_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=V3VR5JAUmqoAX_5qKSi&_nc_ht=scontent.faep14-2.fna&oh=00_AT8HnbxigElWzwWqRKSSrnfNimYRHbhAJ0C0AUTbTBUOSw&oe=62614EB6",
     "ocupation": "Full Stack Web Developer",
-    "ubication": "Río Gallegos, Argentina",
-    "institution": "Universidad Nacional de la Patagonia Austral",
-    "institutionImage": "https://upload.wikimedia.org/wikipedia/commons/9/92/Logo_oficial_UNPA.jpg",
+    "ubication": "Ciudad Autónoma de Buenos Aires, Argentina",
+    "institution": "Instituto Nacional Superior del Profesorado Técnico - U.T.N.",
+    "institutionImage": "https://argentinalegal.net/wp-content/uploads/2020/05/Que-es-utn.png",
+    "about": "Soy una persona emprendedora, proactiva y con mucha experiencia en el rubro hotelero encargándome del manejo y resolución de problemas. He trabajado en hoteles de lujo en Argentina y Estados Unidos. Mi meta es poder crear, usando mis conocimientos, herramientas que simplifiquen las tareas de los diferentes sectores de empresas o Pymes que interactúan con el público en general. Ayudando de esta forma a completar los requerimientos solicitados en menor tiempo, ahorrando energía y recursos. Garantizando así la satisfacción del cliente, y manteniendo el nivel de atención por encima de lo esperado.",
 
-    "about": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi cum quasi, minus nemo vero eum aspernatur eos sapiente eius maxime dolores deleniti in, itaque quos velit corporis recusandae iusto expedita? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, iure officiis? Nesciunt possimus earum eligendi laboriosam quos adipisci rem, assumenda fugit alias similique, excepturi aspernatur, vel praesentium? Voluptas, libero voluptatum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi cum quasi, minus nemo vero eum aspernatur eos sapiente eius maxime dolores deleniti in, itaque quos velit corporis recusandae iusto expedita? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, iure officiis? Nesciunt possimus earum eligendi laboriosam quos adipisci rem, assumenda fugit alias similique, excepturi aspernatur, vel praesentium? Voluptas, libero voluptatum.",
-
-    "education": [{
-        "degree": "Bachiller en Economía y Administración",
-        "school": "Colegio Provincial de Educación Secundaria N°23",
-        "period": "Marzo 2012 - Diciembre 2017",
-        "otherInformation": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum itaque voluptatem sit autem ullam voluptatum earum, sint ipsam ratione incidunt accusamus optio laudantium adipisci, exercitationem nostrum fugit et aliquid animi"
-    },
-    {
-        "degree": "Licenciatura en Sistemas",
-        "school": "Universidad Nacional de la Patagonia Austral",
-        "period": "2018 - PRESENTE",
-        "otherInformation": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum itaque voluptatem sit autem ullam voluptatum earum, sint ipsam ratione incidunt accusamus optio laudantium adipisci, exercitationem nostrum fugit et aliquid animi"
-    }
+    "education": [
+        {
+            "degree": "Bachiller en Economía y Administración",
+            "school": "Colegio Provincial de Educación Secundaria N°23",
+            "period": "Marzo 2012 - Diciembre 2017",
+            "otherInformation": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum itaque voluptatem sit autem ullam voluptatum earum, sint ipsam ratione incidunt accusamus optio laudantium adipisci, exercitationem nostrum fugit et aliquid animi"
+        },
+        {
+            "degree": "Licenciatura en Sistemas",
+            "school": "Universidad Nacional de la Patagonia Austral",
+            "period": "2018 - PRESENTE",
+            "otherInformation": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum itaque voluptatem sit autem ullam voluptatum earum, sint ipsam ratione incidunt accusamus optio laudantium adipisci, exercitationem nostrum fugit et aliquid animi"
+        }
     ],
-    "experience": [{
-        "ocupation": "Administrador de Finanzas",
-        "place": "Pastas Anita",
-        "period": "Agosto 2020 - Febrero 2021",
-        "description": "Atención al público. Diseño de publicidad para las ventas. Administrador de las finanzas del microemprendimiento y del stock del mismo"
-    }
+    "experience": [
+        {
+            "ocupation": "Administrador de Finanzas",
+            "place": "Pastas Anita",
+            "period": "Agosto 2020 - Febrero 2021",
+            "description": "Atención al público. Diseño de publicidad para las ventas. Administrador de las finanzas del microemprendimiento y del stock del mismo"
+        }
     ],
-    "hardskills": [{
-        "name": "HTML",
-        "level": 75
-    },
-    {
-        "name": "CSS",
-        "level": 65
-    },
-    {
-        "name": "Java",
-        "level": 70
-    },
-    {
-        "name": "MySQL",
-        "level": 60
-    }],
-    "softskills":{
+    "hardskills": [
+        {
+            "name": "HTML",
+            "level": 75
+        },
+        {
+            "name": "CSS",
+            "level": 65
+        },
+        {
+            "name": "Java",
+            "level": 70
+        },
+        {
+            "name": "MySQL",
+            "level": 60
+        }
+    ],
+    "softskills": {
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi cum quasi, minus nemo vero eum aspernatur eos sapiente eius maxime dolores deleniti in, itaque quos velit corporis recusandae iusto expedita? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, iure officiis? Nesciunt possimus earum eligendi laboriosam quos adipisci rem, assumenda fugit alias similique, excepturi aspernatur, vel praesentium? Voluptas, libero voluptatum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi cum quasi, minus nemo vero eum aspernatur eos sapiente eius maxime dolores deleniti in, itaque quos velit corporis recusandae iusto expedita? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, iure officiis? Nesciunt possimus earum eligendi laboriosam quos adipisci rem, assumenda fugit alias similique, excepturi aspernatur, vel praesentium? Voluptas, libero voluptatum."
     },
-    "projects": [{
-        "name": "Proyecto Portfolio: Argentina Programa",
-        "description": "Proyecto realizado como práctica para la segunda etapa de Argentina Programa, #YoProgramo",
-        "linkLiveDemo": "https://k-cr.github.io/portfolio-unidad2-AP/",
-        "linkSourceCode": "https://github.com/k-cr/portfolio-unidad2-AP",
-        "projectImage": "https://wisdomit.pt/wp-content/uploads/2020/08/8-Misconceptions-About-Programmers-That-Will-Change-Your-Opinion-About-Them_4.jpg"
-    },
-    {
-        "name": "Proyecto Portfolio: Argentina Programa",
-        "description": "Proyecto realizado como práctica para la segunda etapa de Argentina Programa, #YoProgramo",
-        "linkLiveDemo": "https://k-cr.github.io/portfolio-unidad2-AP/",
-        "linkSourceCode": "https://github.com/k-cr/portfolio-unidad2-AP",
-        "projectImage": "https://wisdomit.pt/wp-content/uploads/2020/08/8-Misconceptions-About-Programmers-That-Will-Change-Your-Opinion-About-Them_4.jpg"
-    },
-    {
-        "name": "Proyecto Portfolio: Argentina Programa",
-        "description": "Proyecto realizado como práctica para la segunda etapa de Argentina Programa, #YoProgramo",
-        "linkLiveDemo": "https://k-cr.github.io/portfolio-unidad2-AP/",
-        "linkSourceCode": "https://github.com/k-cr/portfolio-unidad2-AP",
-        "projectImage": "https://wisdomit.pt/wp-content/uploads/2020/08/8-Misconceptions-About-Programmers-That-Will-Change-Your-Opinion-About-Them_4.jpg"
-    }
+    "projects": [
+        {
+            "name": "Proyecto Portfolio: Argentina Programa",
+            "description": "Proyecto realizado como práctica para la segunda etapa de Argentina Programa, #YoProgramo",
+            "linkLiveDemo": "https://k-cr.github.io/portfolio-unidad2-AP/",
+            "linkSourceCode": "https://github.com/k-cr/portfolio-unidad2-AP",
+            "projectImage": "https://wisdomit.pt/wp-content/uploads/2020/08/8-Misconceptions-About-Programmers-That-Will-Change-Your-Opinion-About-Them_4.jpg"
+        },
+        {
+            "name": "Proyecto Portfolio: Argentina Programa",
+            "description": "Proyecto realizado como práctica para la segunda etapa de Argentina Programa, #YoProgramo",
+            "linkLiveDemo": "https://k-cr.github.io/portfolio-unidad2-AP/",
+            "linkSourceCode": "https://github.com/k-cr/portfolio-unidad2-AP",
+            "projectImage": "https://wisdomit.pt/wp-content/uploads/2020/08/8-Misconceptions-About-Programmers-That-Will-Change-Your-Opinion-About-Them_4.jpg"
+        },
+        {
+            "name": "Proyecto Portfolio: Argentina Programa",
+            "description": "Proyecto realizado como práctica para la segunda etapa de Argentina Programa, #YoProgramo",
+            "linkLiveDemo": "https://k-cr.github.io/portfolio-unidad2-AP/",
+            "linkSourceCode": "https://github.com/k-cr/portfolio-unidad2-AP",
+            "projectImage": "https://wisdomit.pt/wp-content/uploads/2020/08/8-Misconceptions-About-Programmers-That-Will-Change-Your-Opinion-About-Them_4.jpg"
+        }
     ]
 }
