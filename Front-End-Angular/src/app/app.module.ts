@@ -11,7 +11,7 @@ import { coursesComponent } from './components/courses/courses.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { PortfolioService } from './services/portfolio.service';
 import { HttpClientModule } from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 
@@ -20,12 +20,12 @@ import {MatButtonModule} from '@angular/material/button';
   declarations: [
     AppComponent,
     NavbarComponent,
-    ProfileComponent,
+    profileComponent,
     AboutmeComponent,
     EduExpComponent,
     SkillsComponent,
-    CoursesComponent,
-    ProjectsComponent
+    coursesComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,
