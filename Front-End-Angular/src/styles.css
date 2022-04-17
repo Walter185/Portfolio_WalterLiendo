@@ -102,7 +102,7 @@ body {
   padding: 10px;
 }
 img {
-  width: 40px;
+  width: 35px;
 }
 
 #curso {
@@ -110,6 +110,9 @@ img {
 }
 #logoAP {
   width: 160px;
+}
+inspt {
+  width: 200px;
 }
 /* =============== Main =========== */
 

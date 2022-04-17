@@ -1,10 +1,10 @@
 {
-    "name": "Walter Liendo",
+    "name": "Walter R Liendo",
     "bannerImage": "https://www.alvearicon.com/resources/img/hero1.jpg",
     "profilePicture": "https://scontent.faep14-2.fna.fbcdn.net/v/t39.30808-6/275918286_107415865238458_4806998687636731810_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=V3VR5JAUmqoAX_5qKSi&_nc_ht=scontent.faep14-2.fna&oh=00_AT8HnbxigElWzwWqRKSSrnfNimYRHbhAJ0C0AUTbTBUOSw&oe=62614EB6",
-    "ocupation": "Full Stack Web Developer",
-    "ubication": "Ciudad Autónoma de Buenos Aires, Argentina",
-    "institution": "Instituto Nacional Superior del Profesorado Técnico - U.T.N.",
+    "ocupation": "Full Stack Web Developer Jr",
+    "location": "Ciudad Autónoma de Buenos Aires, Argentina",
+    "institution": "INSPT",
     "institutionImage": "https://argentinalegal.net/wp-content/uploads/2020/05/Que-es-utn.png",
     "about": "Soy una persona emprendedora, proactiva y con mucha experiencia en el rubro hotelero encargándome del manejo y resolución de problemas. He trabajado en hoteles de lujo en Argentina y Estados Unidos. Mi meta es poder crear, usando mis conocimientos, herramientas que simplifiquen las tareas de los diferentes sectores de empresas o Pymes que interactúan con el público en general. Ayudando de esta forma a completar los requerimientos solicitados en menor tiempo, ahorrando energía y recursos. Garantizando así la satisfacción del cliente, y manteniendo el nivel de atención por encima de lo esperado.",
 
@@ -13,7 +13,7 @@
             "degree": "Título Comercial con Orientación en Economía y Administración",
             "school": "Liceo Nº 4 Remedios de Escalada de San Martin",
             "period": "Marzo 1990 - Diciembre 1994",
-            "otherInformation": "Colegio Secundario de enseñanza estatal, sede de “Hackatón: Desafíos científicos” "
+            "otherInformation": "Herramientas MICROSOFT- Sede de “Hackatón: Desafíos científicos” "
         },
         {
             "degree": "Técnico en Informática Aplicada",
@@ -25,7 +25,7 @@
             "degree": "Técnico en Administración Hotelera",
             "school": "École pour L´hotellerie “La Suisse” - CEPEC",
             "period": "Marzo 2006 - Diciembre 2007",
-            "otherInformation": "Enseñanza privada, con convenios con los mejores hoteles en el extranjero"
+            "otherInformation": "Programas usados WINPAX - PAX - FIDELIO - OPERA"
         }
     ],
     "experience": [
@@ -33,7 +33,7 @@
             "ocupation": "Programa de Supervición de Recepción",
             "place": "JW Marriott Orlando Grandes Lakes, Orlando",                                                      
             "period": "Enero 2008 - Enero 2009",
-            "description": "Lenguajes usados MARSHA - OPERA"
+            "description": "Programas usado MARSHA (exclusivo de Marriott International)"
         }
     ],
     "hardskills": [
