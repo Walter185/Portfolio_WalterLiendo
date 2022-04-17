@@ -1,6 +1,6 @@
 {
     "name": "Walter Liendo",
-    "bannerImage": "https://th.bing.com/th/id/R.2cfd850653f3ca1703d56fa8bf572a3d?rik=%2bOSsi%2bov8t64cQ&pid=ImgRaw&r=0",
+    "bannerImage": "https://www.alvearicon.com/resources/img/hero1.jpg",
     "profilePicture": "https://scontent.faep14-2.fna.fbcdn.net/v/t39.30808-6/275918286_107415865238458_4806998687636731810_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=V3VR5JAUmqoAX_5qKSi&_nc_ht=scontent.faep14-2.fna&oh=00_AT8HnbxigElWzwWqRKSSrnfNimYRHbhAJ0C0AUTbTBUOSw&oe=62614EB6",
     "ocupation": "Full Stack Web Developer",
     "ubication": "Ciudad Autónoma de Buenos Aires, Argentina",
@@ -10,10 +10,10 @@
 
     "education": [
         {
-            "degree": "Bachiller en Economía y Administración",
-            "school": "Colegio Provincial de Educación Secundaria N°23",
-            "period": "Marzo 2012 - Diciembre 2017",
-            "otherInformation": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum itaque voluptatem sit autem ullam voluptatum earum, sint ipsam ratione incidunt accusamus optio laudantium adipisci, exercitationem nostrum fugit et aliquid animi"
+            "degree": "Título Comercial con Orientacion en Economia y Administración",
+            "school": "Liceo Nº 4 RE de SM",
+            "period": "Marzo 1990 - Diciembre 1994",
+            "otherInformation": ""
         },
         {
             "degree": "Licenciatura en Sistemas",
