@@ -1,38 +1,39 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { LogoAPComponent } from './components/logo-ap/logo-ap.component';
-import { BannerComponent } from './components/banner/banner.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { ProfileComponent } from './components/profile/profile.component';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ExperienciaComponent } from './components/experiencia/experiencia.component';
-import { EducacionComponent } from './components/educacion/educacion.component';
-import { NgCircleProgressModule } from 'ng-circle-progress';
-import { HardsoftskillsComponent } from './components/hardsoftskills/hardsoftskills.component';
-import { ProyectoComponent } from './components/proyecto/proyecto.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { EduExpComponent } from './components/edu-exp/edu-exp.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { CoursesComponent } from './components/courses/courses.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { PortfolioService } from './services/portfolio.service';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    LogoAPComponent,
-    BannerComponent,
+    NavbarComponent,
+    ProfileComponent,
     AboutmeComponent,
-    ExperienciaComponent,
-    EducacionComponent,
-    HardsoftskillsComponent,
-    ProyectoComponent,
-    FooterComponent
+    EduExpComponent,
+    SkillsComponent,
+    CoursesComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    NgbModule,
-    NgCircleProgressModule.forRoot({})
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatProgressBarModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
