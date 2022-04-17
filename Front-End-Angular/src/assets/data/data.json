@@ -10,24 +10,30 @@
 
     "education": [
         {
-            "degree": "Título Comercial con Orientacion en Economia y Administración",
-            "school": "Liceo Nº 4 RE de SM",
+            "degree": "Título Comercial con Orientación en Economía y Administración",
+            "school": "Liceo Nº 4 Remedios de Escalada de San Martin",
             "period": "Marzo 1990 - Diciembre 1994",
-            "otherInformation": ""
+            "otherInformation": "Colegio Secundario de enseñanza estatal, sede de “Hackatón: Desafíos científicos” "
         },
         {
-            "degree": "Licenciatura en Sistemas",
-            "school": "Universidad Nacional de la Patagonia Austral",
-            "period": "2018 - PRESENTE",
-            "otherInformation": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum itaque voluptatem sit autem ullam voluptatum earum, sint ipsam ratione incidunt accusamus optio laudantium adipisci, exercitationem nostrum fugit et aliquid animi"
+            "degree": "Técnico en Informática Aplicada",
+            "school": "Instituto Nacional Superior del Profesorado Técnico - Universidad Tecnológica Nacional",
+            "period": "Marzo 1996 - Diciembre 1997",
+            "otherInformation": "Lenguajes usados PASCAL - COBOL - C++"
+        },
+        {
+            "degree": "Técnico en Administración Hotelera",
+            "school": "École pour L´hotellerie “La Suisse” - CEPEC",
+            "period": "Marzo 2006 - Diciembre 2007",
+            "otherInformation": "Enseñanza privada, con convenios con los mejores hoteles en el extranjero"
         }
     ],
     "experience": [
         {
-            "ocupation": "Administrador de Finanzas",
-            "place": "Pastas Anita",
-            "period": "Agosto 2020 - Febrero 2021",
-            "description": "Atención al público. Diseño de publicidad para las ventas. Administrador de las finanzas del microemprendimiento y del stock del mismo"
+            "ocupation": "Programa de Supervición de Recepción",
+            "place": "JW Marriott Orlando Grandes Lakes, Orlando",                                                      
+            "period": "Enero 2008 - Enero 2009",
+            "description": "Lenguajes usados MARSHA - OPERA"
         }
     ],
     "hardskills": [
