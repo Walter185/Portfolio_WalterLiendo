@@ -6,7 +6,7 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
   templateUrl: './edu-exp.component.html',
   styleUrls: ['./edu-exp.component.css']
 })
-export class EducacionComponent implements OnInit {
+export class EduExpComponent implements OnInit {
   myPortfolio: any;
   educationList: any;
   experienceList: any;
