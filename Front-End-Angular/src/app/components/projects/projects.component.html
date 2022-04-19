@@ -5,7 +5,7 @@
     </div>
     <div class="content">
       <li *ngFor="let projects of projectList">
-        <mat-card class= "example-card">
+        <mat-card class="example-card">
           <div style="padding: 5px;" class="title-button">
             <h5 class="card-title">{{projects.name}}</h5>
             <div class="d-block">
@@ -15,7 +15,7 @@
           </div>
           <img mat-card-image src="{{projects.projectImage}}" alt="Project Image">
             <p>
-              {{projects.description}}
+              <!-- {{projects.description}} -->
             </p>
           <mat-card-actions>
             <a href="{{projects.linkLiveDemo}}"><button mat-button>Live Demo</button></a>

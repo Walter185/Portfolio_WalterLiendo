@@ -23,25 +23,25 @@
           [bufferValue]="bufferValue" style="height:12px; border-radius: 4px;"></mat-progress-bar>
       </li>
     </div>
-  <div class="col-sm-12 col-md-6 col-lg-6">
-    <div class="title-button">
-      <h4>HardSkills</h4>
-      <i class="fa-solid fa-plus" data-bs-toggle="modal" data-bs-target="#addHardSkill"></i>
-    </div>
-    <li *ngFor="let hardskill of myHardskills">
+    <div class="col-sm-12 col-md-6 col-lg-6">
       <div class="title-button">
-        <h5>{{hardskill.name}}</h5>
-        <div class="d-block">
-          <span style="padding-right: 5px;"><i class="fa-solid fa-edit" data-bs-toggle="modal"
-              data-bs-target="#editHardSkill"></i></span>
-          <span style="padding-right: 5px;"><i class="fa-solid fa-trash" data-bs-toggle="modal"
-              data-bs-target="#eliminar"></i></span>
-        </div>
+        <h4>HardSkills</h4>
+        <i class="fa-solid fa-plus" data-bs-toggle="modal" data-bs-target="#addHardSkill"></i>
       </div>
-      <mat-progress-bar class="mb-3" [color]="color" [mode]="mode" [value]="hardskill.level" [bufferValue]="bufferValue"
-        style="height:12px; border-radius: 4px;"></mat-progress-bar>
-    </li>
-  </div>
+      <li *ngFor="let hardskill of myHardskills">
+        <div class="title-button">
+          <h5>{{hardskill.name}}</h5>
+          <div class="d-block">
+            <span style="padding-right: 5px;"><i class="fa-solid fa-edit" data-bs-toggle="modal"
+                data-bs-target="#editHardSkill"></i></span>
+            <span style="padding-right: 5px;"><i class="fa-solid fa-trash" data-bs-toggle="modal"
+                data-bs-target="#eliminar"></i></span>
+          </div>
+        </div>
+        <mat-progress-bar class="mb-3" [color]="color" [mode]="mode" [value]="hardskill.level"
+          [bufferValue]="bufferValue" style="height:12px; border-radius: 4px;"></mat-progress-bar>
+      </li>
+    </div>
   </div>
 </section>
 

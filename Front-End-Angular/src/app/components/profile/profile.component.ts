@@ -6,10 +6,10 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
-export class profileComponent implements OnInit {
+export class ProfileComponent implements OnInit {
 
-  myPortfolio:any;
-  constructor(private portfolioData:PortfolioService) { }
+  myPortfolio: any;
+  constructor(private portfolioData: PortfolioService) { }
 
   ngOnInit(): void {
     this.portfolioData.getData().subscribe(data => {
