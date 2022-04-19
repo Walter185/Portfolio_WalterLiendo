@@ -13,7 +13,7 @@
               <span style="padding-right: 5px;"><i class="fa-solid fa-trash" data-bs-toggle="modal" data-bs-target="#eliminar"></i></span>
             </div>
           </div>
-          <img mat-card-image src="{{projects.projectImage}}" alt="Project Image">
+          <img mat-card-image [src]="projects.projectImage" alt="Project Image">
             <p>
               <!-- {{projects.description}} -->
             </p>
@@ -60,7 +60,7 @@
             </div>
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label">Describa brevemente su proyecto</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <textarea class="form-control" rows="3"></textarea>
             </div>
             <div class="mb-3">
               <label for="nameImput" class="form-label">Vista previa</label>
@@ -98,7 +98,7 @@
             </div>
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label">Describa brevemente su proyecto</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <textarea class="form-control" rows="3"></textarea>
             </div>
             <div class="mb-3">
               <label for="nameImput" class="form-label">Vista previa</label>
@@ -124,7 +124,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Eliminar elemento</h5>
+          <h5 class="modal-title">Eliminar elemento</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">

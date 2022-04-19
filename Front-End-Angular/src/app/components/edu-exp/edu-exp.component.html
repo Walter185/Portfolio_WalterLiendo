@@ -17,7 +17,7 @@
                 {{education.period}}
               </h5>
               <div class="title-button">
-                <h5 class="timeline-title" id="bold">{{education.school}}</h5>
+                <h5 class="timeline-title">{{education.school}}</h5>
                 <div class="d-block">
                   <span style="padding-right: 5px;"><i class="fa-solid fa-edit" data-bs-toggle="modal"
                       data-bs-target="#editeducation"></i></span>
@@ -27,12 +27,6 @@
               </div>
               <div class="title-button">
                 <h5 class="timeline-title">{{education.degree}}</h5>
-                <div class="d-block">
-                  <span style="padding-right: 5px;"><i class="fa-solid fa-edit" data-bs-toggle="modal"
-                      data-bs-target="#editeducation"></i></span>
-                  <span style="padding-right: 5px;"><i class="fa-solid fa-trash" data-bs-toggle="modal"
-                      data-bs-target="#eliminar"></i></span>
-                </div>
               </div>
               <div class="title-button">
                 <h5 class="timeline-text">{{education.otherInformation}}</h5>
@@ -70,12 +64,6 @@
               </div>
               <div class="title-button">
                 <h5 class="timeline-title">{{experience.ocupation}}</h5>
-                <div class="d-block">
-                  <span style="padding-right: 5px;"><i class="fa-solid fa-edit" data-bs-toggle="modal"
-                      data-bs-target="#editeducation"></i></span>
-                  <span style="padding-right: 5px;"><i class="fa-solid fa-trash" data-bs-toggle="modal"
-                      data-bs-target="#eliminar"></i></span>
-                </div>
               </div>
               <h5 class="timeline-text">{{experience.description}}</h5>
             </li>
@@ -108,7 +96,7 @@
           </div>
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">¿Otra información que quiera agregar?</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control" rows="3"></textarea>
           </div>
           <br>
           <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
@@ -141,7 +129,7 @@
           </div>
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">¿Otra información que quiera agregar?</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control" rows="3"></textarea>
           </div>
           <br>
           <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
@@ -175,7 +163,7 @@
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Describa las actividades del cargo que
               ocupaba</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control" rows="3"></textarea>
           </div>
           <br>
           <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
@@ -209,11 +197,11 @@
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Describa las actividades del cargo que
               ocupaba</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control" rows="3"></textarea>
           </div>
           <br>
           <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
-          <input type="submit" class="btn btn-primary ms-2">Guardar cambios
+          <button type="submit" class="btn btn-primary ms-2">Guardar cambios</button>
         </form>
       </div>
     </div>
@@ -225,7 +213,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Eliminar elemento</h5>
+        <h5 class="modal-title">Eliminar elemento</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">

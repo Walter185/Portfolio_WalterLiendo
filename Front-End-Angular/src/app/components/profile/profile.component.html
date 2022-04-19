@@ -1,14 +1,13 @@
 <!-- Home section -->
 
 <div class="card mat-card mx-auto" id="card-about">
-    <img class="profile-cover" src="{{myPortfolio.bannerImage}}" alt="Card image cap">
+    <img class="profile-cover" [src]="myPortfolio.bannerImage" alt="Card image cap">
     <div class="profile-details">
       <div class="info-about">
         <div class="img-about mb-3" id="profile-pfpEdit">
-          <img src="{{myPortfolio.profilePicture}}" title="Walter Liendo" id="profile-pfp">
+          <img [src]="myPortfolio.profilePicture" title="Walter Liendo" id="profile-pfp">
           <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#editProfile"></i>
         </div>
-  
         <div class="mb-3" id="info-data">
           <div>
             <h2>{{myPortfolio.name}}</h2>
@@ -20,7 +19,7 @@
           <ul id="info-details">
             <li>
               <a href="http://inspt.utn.edu.ar" target="_blank" rel="noopener" style="text-decoration:none;">
-                <img src="{{myPortfolio.institutionImage}}" alt="" class="logo-unpa" id="inspt">
+                <img [src]="myPortfolio.institutionImage" alt="" class="logo-unpa" id="inspt">
                 <h5>{{myPortfolio.institution}}</h5>
               </a>
             </li>
@@ -50,7 +49,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Editar perfil</h5>
+          <h5 class="modal-title">Editar perfil</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
