@@ -15,6 +15,9 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { FooterComponent } from './components/footer/footer.component';
+import { AppRoutingModule } from './app-routing.module';
+import { NgMaterialModule } from './ng-material/ng-material.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -35,7 +38,10 @@ import { FooterComponent } from './components/footer/footer.component';
     BrowserAnimationsModule,
     MatProgressBarModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    NgMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
