@@ -1,78 +1,89 @@
-<section class="card mat-card mx-auto" id="experience">
-  <div class="row">
+<div class="card mat-card mx-auto">
+  <div id="experience">
     <!-- Education -->
-    <div class="education">
-      <div class="title-button">
-        <h3 class="content-title">Educación</h3>
-        <i class="fa-solid fa-plus" data-bs-toggle="modal" data-bs-target="#addeducation"></i>
-      </div>
-      <div class="row">
-        <div class="timeline-box">
-          <div class="timeline">
-            <!-- timeline items -->
-            <li class="timeline-item" *ngFor="let education of educationList">
-              <i class="timeline-icon fa-solid fa-graduation-cap"></i>
-              <h5 class="timeline-date">
-                <i class="fa-regular fa-calendar"></i>
-                {{education.period}}
-              </h5>
-              <div class="title-button">
-                <h5 class="timeline-title">{{education.school}}</h5>
-                <div class="d-block">
-                  <span style="padding-right: 5px;"><i class="fa-solid fa-edit" data-bs-toggle="modal"
-                      data-bs-target="#editeducation"></i></span>
-                  <span style="padding-right: 5px;"><i class="fa-solid fa-trash" data-bs-toggle="modal"
-                      data-bs-target="#eliminar"></i></span>
-                </div>
-              </div>
-              <div class="title-button">
-                <h5 class="timeline-title">{{education.degree}}</h5>
-              </div>
-              <div class="title-button">
-                <h5 class="timeline-text">{{education.otherInformation}}</h5>
-              </div>
-            </li>
-          </div>
-        </div>
+    <div class="card-titles">
+      <h2>Educación</h2>
+      <div class="btn-edit">
+        <a href="#" class="btn-right"><i class="fa-solid fa-plus" data-bs-toggle="modal"
+            data-bs-target="#addeducation"></i></a>
       </div>
     </div>
-    <!-- Experience -->
-    <div class="experience">
-      <div class="title-button">
-        <h3 class="content-title">Experiencia laboral</h3>
-        <i class="fa-solid fa-plus" data-bs-toggle="modal" data-bs-target="#addexperience"></i>
-      </div>
-      <div class="row">
-        <div class="timeline-box">
-          <!-- timeline items -->
-          <div class="timeline">
-            <li class="timeline-item" *ngFor="let experience of experienceList">
-              <!-- Iconito de graduación -->
-              <i class="timeline-icon fa-solid fa-briefcase"></i>
-              <h5 class="timeline-date">
-                <i class="fa-regular fa-calendar"></i>
-                {{experience.period}}
-              </h5>
-              <div class="title-button">
-                <h5 class="timeline-title" id="bold">{{experience.place}}</h5>
-                <div class="d-block">
-                  <span style="padding-right: 5px;"><i class="fa-solid fa-edit" data-bs-toggle="modal"
-                      data-bs-target="#editeducation"></i></span>
-                  <span style="padding-right: 5px;"><i class="fa-solid fa-trash" data-bs-toggle="modal"
-                      data-bs-target="#eliminar"></i></span>
-                </div>
-              </div>
-              <div class="title-button">
-                <h5 class="timeline-title">{{experience.ocupation}}</h5>
-              </div>
-              <h5 class="timeline-text">{{experience.description}}</h5>
-            </li>
+    <div>
+      <ul class="items-list">
+        <li>
+          <div class="data-container">
+            <a href="#">
+            </a>
           </div>
+        </li>
+
+      </ul>
+      <div class="timeline-box">
+        <div class="timeline">
+          <!-- timeline items -->
+          <li class="timeline-item" *ngFor="let education of educationList">
+            <i class="timeline-icon fa-solid fa-graduation-cap"></i>
+            <h5 class="timeline-date">
+              <i class="fa-regular fa-calendar"></i>
+              {{education.start}} - {{education.end}}
+            </h5>
+            <div class="title-button">
+              <h5 class="timeline-title">{{education.school}}</h5>
+              <div class="d-block">
+                <span style="padding-right: 5px;"><i class="fa-solid fa-edit" data-bs-toggle="modal"
+                    data-bs-target="#editeducation"></i></span>
+                <span style="padding-right: 5px;"><i class="fa-solid fa-trash" data-bs-toggle="modal"
+                    data-bs-target="#eliminar"></i></span>
+              </div>
+            </div>
+            <div class="title-button">
+              <h5 class="timeline-title">{{education.degree}}</h5>
+            </div>
+            <div class="title-button">
+              <h5 class="timeline-text">{{education.otherInformation}}</h5>
+            </div>
+          </li>
         </div>
       </div>
     </div>
   </div>
-</section>
+  <!-- Experience -->
+  <div class="experience">
+    <div class="title-button">
+      <h3 class="content-title">Experiencia laboral</h3>
+      <i class="fa-solid fa-plus" data-bs-toggle="modal" data-bs-target="#addexperience"></i>
+    </div>
+    <div class="row">
+      <div class="timeline-box">
+        <!-- timeline items -->
+        <div class="timeline">
+          <li class="timeline-item" *ngFor="let experience of experienceList">
+            <!-- Iconito de graduación -->
+            <i class="timeline-icon fa-solid fa-briefcase"></i>
+            <h5 class="timeline-date">
+              <i class="fa-regular fa-calendar"></i>
+              {{experience.period}}
+            </h5>
+            <div class="title-button">
+              <h5 class="timeline-title" id="bold">{{experience.place}}</h5>
+              <div class="d-block">
+                <span style="padding-right: 5px;"><i class="fa-solid fa-edit" data-bs-toggle="modal"
+                    data-bs-target="#editeducation"></i></span>
+                <span style="padding-right: 5px;"><i class="fa-solid fa-trash" data-bs-toggle="modal"
+                    data-bs-target="#eliminar"></i></span>
+              </div>
+            </div>
+            <div class="title-button">
+              <h5 class="timeline-title">{{experience.ocupation}}</h5>
+            </div>
+            <h5 class="timeline-text">{{experience.description}}</h5>
+          </li>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <div class="modal fade" id="editeducation" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
   aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -167,7 +178,7 @@
           </div>
           <br>
           <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
-          <button type="submit" class="btn btn-primary ms-2">Guardar cambios</button> 
+          <button type="submit" class="btn btn-primary ms-2">Guardar cambios</button>
         </form>
       </div>
     </div>

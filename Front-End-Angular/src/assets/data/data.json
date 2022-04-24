@@ -14,19 +14,22 @@
             "degree": "Título Comercial con Orientación en Economía y Administración",
             "school": "Liceo Nº 4 Remedios de Escalada de San Martin",
             "img":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fliceo4rdesanmartin.blogspot.com%2F2015%2F08%2Fproyecto-articulacion-con-primaria.html%3Fm%3D0&psig=AOvVaw1LEGlnCWb37e2y1-4iTT76&ust=1650475912313000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCIiuxIbUoPcCFQAAAAAdAAAAABAD",
-            "period": "Marzo 1990 - Diciembre 1994",
+            "start": "Marzo 1990",
+            "end": "Diciembre 1994",
             "otherInformation": "Herramientas MICROSOFT- Sede de “Hackatón: Desafíos científicos” "
         },
         {
             "degree": "Técnico en Informática Aplicada",
             "school": "Instituto Nacional Superior del Profesorado Técnico - UTN",
-            "period": "Marzo 1996 - Diciembre 1997",
+            "start": "Marzo 1996",
+            "end": "Diciembre 1997",
             "otherInformation": "Lenguajes usados PASCAL - COBOL - C++"
         },
         {
             "degree": "Técnico en Administración Hotelera",
             "school": "École pour L´hotellerie “La Suisse” - CEPEC",
-            "period": "Marzo 2006 - Diciembre 2007",
+            "start": "Marzo 2006",
+            "end":"Diciembre 2007",
             "otherInformation": "Programas usados WINPAX - PAX - FIDELIO - OPERA"
         }
     ],

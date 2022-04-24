@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { PortfolioService } from 'src/app/services/portfolio.service';
 
 @Component({
@@ -11,12 +12,18 @@ export class EduExpComponent implements OnInit {
   educationList: any;
   experienceList: any;
 
-  constructor(private portfolioData: PortfolioService) { }
+  constructor(private portfolioData: PortfolioService, private route: Router) {
 
-  ngOnInit(): void {
     this.portfolioData.getData().subscribe(data => {
       this.educationList = data.education;
       this.experienceList = data.experience;
     });
+
+
+
   }
+  ngOnInit(): void {
+
+  }
+
 }
