@@ -167,6 +167,9 @@ body {
 #experience {
     padding: 2.5rem;
 }
+#education {
+    padding: 2.5rem;
+}
 
 .education {
     flex: 0 0 50%;

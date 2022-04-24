@@ -18,7 +18,7 @@ export class SkillsComponent implements OnInit {
   constructor(private portfolioData: PortfolioService) { }
 
   ngOnInit(): void {
-    this.portfolioData.getData().subscribe(data => {
+      this.portfolioData.getData().subscribe(data => {
       this.mySoftskills = data.softskills;
       this.myHardskills = data.hardskills;
     });

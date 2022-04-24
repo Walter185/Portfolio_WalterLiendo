@@ -20,7 +20,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { NgMaterialModule } from './ng-material/ng-material.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { fromEventPattern } from 'rxjs';
-import { NgCircleProgressModule } from 'ng-circle-progress';
 
 const routes:Route[]=[
   {path:'',component:ProfileComponent}
@@ -49,7 +48,7 @@ const routes:Route[]=[
     ReactiveFormsModule,
     NgMaterialModule,
     RouterModule.forRoot(routes),
-    NgCircleProgressModule.forRoot({})
+
     
   ],
   providers: [],
