@@ -1,25 +1,25 @@
-<!-- Home section -->
-
 <div class="card mat-card mx-auto" id="card-about">
+  <div id="profile-background">
     <img class="profile-cover" [src]="myPortfolio.bannerImage" alt="Card image cap">
-    <div class="profile-details">
-      <div class="info-about">
+  </div>
+  <div id="info" style="padding:16px">
         <div class="img-about mb-3" id="profile-pfpEdit">
           <img [src]="myPortfolio.profilePicture" title="Walter Liendo" id="profile-pfp">
           <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#editProfile"></i>
-        </div>
-        <div class="mb-3" id="info-data">
+          </div>
+        <div id="info-data">
           <div>
-            <h2>{{myPortfolio.name}}</h2>
+            <h1>{{myPortfolio.name}}</h1>
             <div id="info-company">{{myPortfolio.ocupation}}</div>
             <div id="info-contact">
-              <span>{{myPortfolio.location}}</span>
+              <span>{{myPortfolio.ubication}}</span>
+              <span><a href="tel:+5491158465481">Informacion de contacto</a></span>
             </div>
           </div>
           <ul id="info-details">
             <li>
               <a href={{myPortfolio.url}} target="_blank" rel="noopener" style="text-decoration:none;">
-                <img [src]="myPortfolio.institutionImage" alt="" class="logo-unpa">               
+                <img [src]="myPortfolio.institutionImage" alt="" class="logo-image">               
                  <h5>{{myPortfolio.institution}}</h5>
               </a>
             </li>
@@ -42,9 +42,7 @@
         </div>
       </div>
     </div>
-  </div>
   
-  <!-- Modal -->
   <div class="modal fade" id="editProfile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">

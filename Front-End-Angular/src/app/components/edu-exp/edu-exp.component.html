@@ -1,88 +1,86 @@
+<!-- Experience -->
 <div class="card mat-card mx-auto">
   <div id="experience">
-    <!-- Education -->
     <div class="card-titles">
-      <h2>Educación</h2>
       <div class="btn-edit">
-        <a href="#" class="btn-right"><i class="fa-solid fa-plus" data-bs-toggle="modal"
-            data-bs-target="#addeducation"></i></a>
+        <span style="padding-right: 5px;"><i class="fa-solid fa-edit" data-bs-toggle="modal"
+            data-bs-target="#editexperience"></i>
+        </span>
       </div>
-    </div>
+      <h2>Experiencia</h2>
+    </div><br>
     <div>
       <ul class="items-list">
-        <li>
+        <li *ngFor="let experience of experienceList">
           <div class="data-container">
-            <a href="#">
-            </a>
+            <div class="logo-image">
+              <img class="logo-image" [src]="experience.img" />
+              <div class="list-info">
+              </div>
+            </div>
+          </div>
+          <h5 class="timeline-date">
+            <i class="fa-regular fa-calendar"></i>
+            {{experience.start}} - {{experience.end}}
+          </h5>
+          <div class="title-button">
+            <h2 class="timeline-title" id="bold">{{experience.company}}<br>
+              {{experience.position}} - ({{experience.mode}}) Detalle: {{experience.detail}}</h2>
+            <div class="d-block">
+              <span style="padding-right: 5px;"><i class="fa-solid fa-edit" data-bs-toggle="modal"
+                  data-bs-target="#editeducation"></i></span>
+              <span style="padding-right: 5px;"><i class="fa-solid fa-trash" data-bs-toggle="modal"
+                  data-bs-target="#eliminar"></i></span>
+            </div>
           </div>
         </li>
-
       </ul>
-      <div class="timeline-box">
-        <div class="timeline">
-          <!-- timeline items -->
-          <li class="timeline-item" *ngFor="let education of educationList">
-            <i class="timeline-icon fa-solid fa-graduation-cap"></i>
-            <h5 class="timeline-date">
-              <i class="fa-regular fa-calendar"></i>
-              {{education.start}} - {{education.end}}
-            </h5>
-            <div class="title-button">
-              <h5 class="timeline-title">{{education.school}}</h5>
-              <div class="d-block">
-                <span style="padding-right: 5px;"><i class="fa-solid fa-edit" data-bs-toggle="modal"
-                    data-bs-target="#editeducation"></i></span>
-                <span style="padding-right: 5px;"><i class="fa-solid fa-trash" data-bs-toggle="modal"
-                    data-bs-target="#eliminar"></i></span>
-              </div>
-            </div>
-            <div class="title-button">
-              <h5 class="timeline-title">{{education.degree}}</h5>
-            </div>
-            <div class="title-button">
-              <h5 class="timeline-text">{{education.otherInformation}}</h5>
-            </div>
-          </li>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Experience -->
-  <div class="experience">
-    <div class="title-button">
-      <h3 class="content-title">Experiencia laboral</h3>
-      <i class="fa-solid fa-plus" data-bs-toggle="modal" data-bs-target="#addexperience"></i>
-    </div>
-    <div class="row">
-      <div class="timeline-box">
-        <!-- timeline items -->
-        <div class="timeline">
-          <li class="timeline-item" *ngFor="let experience of experienceList">
-            <!-- Iconito de graduación -->
-            <i class="timeline-icon fa-solid fa-briefcase"></i>
-            <h5 class="timeline-date">
-              <i class="fa-regular fa-calendar"></i>
-              {{experience.period}}
-            </h5>
-            <div class="title-button">
-              <h5 class="timeline-title" id="bold">{{experience.place}}</h5>
-              <div class="d-block">
-                <span style="padding-right: 5px;"><i class="fa-solid fa-edit" data-bs-toggle="modal"
-                    data-bs-target="#editeducation"></i></span>
-                <span style="padding-right: 5px;"><i class="fa-solid fa-trash" data-bs-toggle="modal"
-                    data-bs-target="#eliminar"></i></span>
-              </div>
-            </div>
-            <div class="title-button">
-              <h5 class="timeline-title">{{experience.ocupation}}</h5>
-            </div>
-            <h5 class="timeline-text">{{experience.description}}</h5>
-          </li>
-        </div>
-      </div>
     </div>
   </div>
 </div>
+
+<!--educacion-->
+<div class="card mat-card mx-auto">
+  <div id="education">
+    <div class="card-titles">
+      <div class="btn-edit">
+        <span style="padding-right: 5px;"><i class="fa-solid fa-edit" data-bs-toggle="modal"
+            data-bs-target="#editeducation"></i>
+        </span>
+      </div>
+      <h2>Educación</h2>
+    </div><br>
+    <div>
+      <ul class="items-list">
+        <li *ngFor="let education of educationList">
+          <div class="data-container">
+            <div class="logo-image">
+              <img class="logo-image" [src]="education.img" />
+              <div class="list-info">
+              </div>
+            </div>
+          </div>
+          <h5 class="timeline-date">
+            <i class="fa-regular fa-calendar"></i>
+            {{education.start}} - {{education.end}}
+          </h5>
+          <div class="title-button">
+            <h2 class="timeline-title" id="bold">{{education.school}}<br>
+              {{education.degree}} Detalle: {{education.otherInformation}}</h2>
+            <div class="d-block">
+              <span style="padding-right: 5px;"><i class="fa-solid fa-edit" data-bs-toggle="modal"
+                  data-bs-target="#editeducation"></i></span>
+              <span style="padding-right: 5px;"><i class="fa-solid fa-trash" data-bs-toggle="modal"
+                  data-bs-target="#eliminar"></i></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
 
 
 <div class="modal fade" id="editeducation" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
