@@ -340,6 +340,9 @@ text-align: center;
   border-radius: 10px;
   transition: 0.5s ease;
 }
+#imgproj:hover {
+border: 2px solid rgb(54, 54, 74);
+}
 
 .project .content .card .card-img img:hover {
   transform: scale(1.2);

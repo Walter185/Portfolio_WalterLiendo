@@ -15,12 +15,8 @@
                 data-bs-target="#eliminar"></i></span>
           </div>
         </div>
-        <img mat-card-image [src]="projects.projectImage" alt="Project Image">
-        <p>
-          <!-- {{projects.description}} -->
-        </p>
+        <img mat-card-image [src]="projects.projectImage" alt="Project Image" id="imgproj" title="{{projects.description}}">
         <mat-card-actions>
-          <a href="{{projects.linkLiveDemo}}"><button mat-button>Live Demo</button></a>
           <a href="{{projects.linkSourceCode}}"><button mat-button>Source Code</button></a>
         </mat-card-actions>
       </mat-card>

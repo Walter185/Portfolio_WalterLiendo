@@ -66,37 +66,54 @@
     ],
     "hardskills": [
         {
-            "img":"https://www.clipartkey.com/mpngs/m/210-2104705_html-logo-png-transparent-background.png",
             "name": "HTML",
-            "level": 85
+            "level": 90
         },
         {
             "name": "CSS",
-            "level": 75
+            "level": 90
         },
         {
             "name": "Java",
-            "level": 70
+            "level": 80
+        },
+        {
+            "name": "Manejo de Idiomas",
+            "level": 100
+        },
+        {
+            "name": "Angular",
+            "level": 85
+        },
+        {
+            "name": "Github",
+            "level": 90
         }
     ],
     "softskills":  [
         {
-            "name": "HTML",
-            "level": 85
+            "name": "Pensamiento Crítico",
+            "level": 95
         },
         {
-            "name": "CSS",
-            "level": 75
+            "name": "Compromiso",
+            "level": 100
         },
         {
-            "name": "Java",
-            "level": 70
-        }
-    ],
-    "aptitudes":[
+            "name": "Trabajo en equipo",
+            "level": 100
+        },
+        {
+            "name": "Empatía",
+            "level": 95
+        },
+        {
+            "name": "Actitud positiva frente a Objetivos y desafíos",
+            "level": 98
+        },
         {
             "name":"Resolucion de problemas",
-            "progress":75
+            "level": 95
         }
     ],
 
@@ -104,21 +121,18 @@
         {
             "name": "Proyecto Mainero - Maquinarias Agricolas (En proceso de contrucción)",
             "description": "La línea más completa de equipos para la cosecha, reserva y distribución de forrajes de América Latina con repuestos legítimos y servicio Post-venta. Seguimiento de Stock / inventario / Clientes y Facturación.",
-            "linkLiveDemo": "blank",
             "linkSourceCode": "blank",
             "projectImage": "https://www.mainero.com/es/wp-content/uploads/2021/08/Tolva-III.jpg"
         },
         {
-            "name": "Proyecto Portfolio: Argentina Programa",
+            "name": "Proyecto Integrador: Portfolio Argentina Programa #YoProgramo ",
             "description": "Proyecto Integrador realizado para la segunda etapa del Argentina Programa: #YoProgramo",
-            "linkLiveDemo": "https://github.com/Walter185/Portfolio_WalterLiendo",
             "linkSourceCode": "https://github.com/Walter185/Portfolio_WalterLiendo",
             "projectImage": "https://www.alvearicon.com/resources/img/hero1.jpg"
         },
         {
             "name": "Proyecto AYS - At Your Service (En proceso de contrucción)",
             "description": "AYS es un programa confeccionado con el fin de cumplir con los standares de servicio de un Hotel de lujo. Con AYS se puede llevar un registro exacto de pedidos realizados por el huesped, pudiendo hacerle seguimiento a los pedidos, y corroborando el cumplimiento de los mismos. Usted puede llevar un historial de servicios consumidos, hacer estadisticas, y controlar stock de los amenities consumidos.",
-            "linkLiveDemo": "blank",
             "linkSourceCode": "blank",
             "projectImage": "https://cdn.euroinnova.edu.es/img/subidasEditor/atenci%C3%B3n%20telef%C3%B3nica%20que%20es-1604573111.webp"
         }
