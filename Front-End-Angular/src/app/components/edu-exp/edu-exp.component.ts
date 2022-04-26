@@ -12,9 +12,9 @@ export class EduExpComponent implements OnInit {
   educationList: any;
   experienceList: any;
 
-  constructor(private portfolioData: PortfolioService, private route: Router) {
+  constructor(private portfolioService: PortfolioService, private route: Router) {
 
-    this.portfolioData.getData().subscribe(data => {
+    this.portfolioService.getData().subscribe(data => {
       this.educationList=data.education;
       this.experienceList=data.experience;
     });

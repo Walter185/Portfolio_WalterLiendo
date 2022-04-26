@@ -15,10 +15,10 @@ export class SkillsComponent implements OnInit {
   mySoftskills: any;
   myHardskills: any;
 
-  constructor(private portfolioData: PortfolioService) { }
+  constructor(private portfolioService: PortfolioService) { }
 
   ngOnInit(): void {
-      this.portfolioData.getData().subscribe(data => {
+      this.portfolioService.getData().subscribe(data => {
       this.mySoftskills = data.softskills;
       this.myHardskills = data.hardskills;
     });

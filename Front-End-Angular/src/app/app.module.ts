@@ -7,7 +7,6 @@ import { ProfileComponent } from './components/encabezado/encabezado.component';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { EduExpComponent } from './components/edu-exp/edu-exp.component';
 import { SkillsComponent } from './components/skills/skills.component';
-import { coursesComponent } from './components/courses/courses.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { PortfolioService } from './services/portfolio.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -33,7 +32,6 @@ const routes:Route[]=[
     AboutmeComponent,
     EduExpComponent,
     SkillsComponent,
-    coursesComponent,
     ProjectsComponent,
     FooterComponent,
   ],
