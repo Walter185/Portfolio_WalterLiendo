@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { AppComponent } from './app.component';
@@ -10,18 +11,17 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { PortfolioService } from './services/portfolio.service';
 import { HttpClientModule } from '@angular/common/http';
-import { Route, RouterModule } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { FooterComponent } from './components/footer/footer.component';
-import { AppRoutingModule } from './app-routing.module';
 import { NgMaterialModule } from './ng-material/ng-material.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { fromEventPattern } from 'rxjs';
 
-const routes:Route[]=[
-  {path:'',component:ProfileComponent}
+const routes:Routes=[
+  {path:'',component:ProfileComponent},
 ];
 
 @NgModule({
@@ -46,10 +46,11 @@ const routes:Route[]=[
     ReactiveFormsModule,
     NgMaterialModule,
     RouterModule.forRoot(routes),
-
-    
   ],
+
+  exports:[RouterModule],
+
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { };
