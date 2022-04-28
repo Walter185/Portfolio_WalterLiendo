@@ -19,6 +19,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NgMaterialModule } from './ng-material/ng-material.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { fromEventPattern } from 'rxjs';
+import { LoginComponent } from './components/login/login.component';
 
 const routes:Routes=[
   {path:'',component:ProfileComponent},
@@ -34,6 +35,7 @@ const routes:Routes=[
     SkillsComponent,
     ProjectsComponent,
     FooterComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
