@@ -20,6 +20,8 @@ import { NgMaterialModule } from './ng-material/ng-material.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { fromEventPattern } from 'rxjs';
 import { LoginComponent } from './components/login/login.component';
+import { FormsModule } from '@angular/forms';
+
 
 const routes:Routes=[
   {path:'',component:ProfileComponent},
@@ -48,6 +50,8 @@ const routes:Routes=[
     ReactiveFormsModule,
     NgMaterialModule,
     RouterModule.forRoot(routes),
+    BrowserModule,
+    FormsModule
   ],
 
   exports:[RouterModule],
