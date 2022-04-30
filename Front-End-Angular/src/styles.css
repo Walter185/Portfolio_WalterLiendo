@@ -52,7 +52,11 @@ body {
   align-items: center;
   flex-direction: column;
 }
-
+#inicie{
+  margin: 20px;
+  text-align: center;
+  padding: 20px;
+}
 .section-title {
   position: relative;
   color: var(--color-primary);

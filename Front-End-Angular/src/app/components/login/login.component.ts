@@ -10,7 +10,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 
 export class LoginComponent implements OnInit {
-  form:FormGroup;
+form:FormGroup;
   email='';
   password='';
 
@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
       mail:['',[]]
     })
   }
-
+  
   ngOnInit() { }
 
 }

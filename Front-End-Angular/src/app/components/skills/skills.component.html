@@ -10,6 +10,7 @@
                     <h4>SoftSkills</h4>
                     <i class="fa-solid fa-plus" data-bs-toggle="modal" data-bs-target="#addSoftSkill"></i>
                  </div>
+                 <br>
                 <li *ngFor="let softskill of mySoftskills">
                     <div class="title-button">
                         <h5>{{softskill.name}}</h5>
@@ -24,11 +25,12 @@
                         [bufferValue]="bufferValue" style="height:12px; border-radius: 4px;"></mat-progress-bar>
                 </li>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="col-sm-12 col-md-6 col-lg-6">
                 <div class="title-button">
                     <h4>HardSkills</h4>
                     <i class="fa-solid fa-plus" data-bs-toggle="modal" data-bs-target="#addHardSkill"></i>
-                </div>
+                    </div>
+                    <br>
                 <li *ngFor="let hardskill of myHardskills">
                     <div class="title-button">
                         <h5>{{hardskill.name}}</h5>

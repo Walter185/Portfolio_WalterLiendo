@@ -15,10 +15,10 @@ export class AuthService {
   
   login(email:string, password:string) {
      this.http.post(this.api + '/authenticate', {email: email, password: password})
-.subscribe((resp: any)  => {
+.subscribe((resp: any) => {
   this.router.navigate(['profile']);
   localStorage.setItem('auth_token', resp.token);
-})
+});
   }
   logout() {
     localStorage.removeItem('token');
