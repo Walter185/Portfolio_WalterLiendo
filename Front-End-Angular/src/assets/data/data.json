@@ -1,7 +1,7 @@
 {
     "name": "Walter R Liendo",
-    "bannerImage": "https://scontent.faep14-3.fna.fbcdn.net/v/t39.30808-6/278879494_121043477209030_90632881102949126_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=e3f864&_nc_ohc=cK87jbMYRecAX-WPH2y&_nc_ht=scontent.faep14-3.fna&oh=00_AT85bRnZEswPJTUgZSz4xjGw_O4MwG4Qcla9G67bedyyhA&oe=626324A1",
-    "profilePicture": "https://scontent.faep14-2.fna.fbcdn.net/v/t39.30808-6/275918286_107415865238458_4806998687636731810_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=V3VR5JAUmqoAX_5qKSi&_nc_ht=scontent.faep14-2.fna&oh=00_AT8HnbxigElWzwWqRKSSrnfNimYRHbhAJ0C0AUTbTBUOSw&oe=62614EB6",
+    "bannerImage": "../../assets/img/hero1.jpg",
+    "profilePicture": "../../assets/img/walter.png",
     "ocupation": "Full-Stack Web Developer Jr.",
     "location": "Ciudad Autónoma de Buenos Aires, Argentina",
     "institution": "INSPT",
@@ -123,7 +123,7 @@
             "name": "Proyecto Mainero - Maquinarias Agricolas (En proceso de contrucción)",
             "description": "La línea más completa de equipos para la cosecha, reserva y distribución de forrajes de América Latina con repuestos legítimos y servicio Post-venta. Seguimiento de Stock / inventario / Clientes y Facturación.",
             "linkSourceCode": "blank",
-            "projectImage": "https://www.mainero.com/es/wp-content/uploads/2021/08/Tolva-III.jpg"
+            "projectImage": "../../assets/img/mainero.png"
         },
         {
             "name": "Proyecto Integrador: Portfolio Argentina Programa #YoProgramo ",
