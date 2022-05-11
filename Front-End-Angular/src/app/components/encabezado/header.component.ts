@@ -6,9 +6,9 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
 
 
 @Component({
-  selector: 'app-encabezado',
-  templateUrl: './encabezado.component.html',
-  styleUrls: ['./encabezado.component.css']
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css']
 })
 export class ProfileComponent implements OnInit {
 

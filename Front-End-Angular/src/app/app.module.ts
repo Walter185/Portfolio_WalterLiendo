@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { ProfileComponent } from './components/encabezado/encabezado.component';
+import { ProfileComponent } from './components/encabezado/header.component';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { EduExpComponent } from './components/edu-exp/edu-exp.component';
 import { SkillsComponent } from './components/skills/skills.component';
@@ -19,8 +19,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NgMaterialModule } from './ng-material/ng-material.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { fromEventPattern } from 'rxjs';
-import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './components/login/login.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 
 const routes:Routes=[
@@ -38,6 +39,8 @@ const routes:Routes=[
     ProjectsComponent,
     FooterComponent,
     LoginComponent,
+    PortfolioComponent,
+
   ],
   imports: [
     BrowserModule,
