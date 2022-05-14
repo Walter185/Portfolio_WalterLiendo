@@ -22,6 +22,3 @@ export class BoardModeratorComponent implements OnInit {
     );
   }
 }
-  }
-
-}
