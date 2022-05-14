@@ -20,7 +20,7 @@ import { NgMaterialModule } from './ng-material/ng-material.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { fromEventPattern } from 'rxjs';
 import { FormsModule } from '@angular/forms';
-import { LoginComponent } from './components/iniciar-sesion/login.component';
+import { LoginComponent } from './components/login/login.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { InterceptorService } from './services/interceptor.service';
 
