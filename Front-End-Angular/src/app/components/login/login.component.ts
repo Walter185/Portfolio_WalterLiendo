@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
-import { AuthService } from 'src/app/services/auth.service';
+import { AuthService } from 'src/app/services/auth.service'
+import { TokenStorageService } from 'src/app/services/token-storage.service';
 
 @Component({
   selector: 'app-login',
@@ -9,38 +8,44 @@ import { AuthService } from 'src/app/services/auth.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  form: any = {
+    username: null,
+    password: null
+  };
+  isLoggedIn = false;
+  isLoginFailed = false;
+  errorMessage = '';
+  roles: string[] = [];
 
-  form: FormGroup;
-  constructor(private formBuilder:FormBuilder, private authService:AuthService, private router:Router) {
-  this.form=this.formBuilder.group(
-    {
-      email:['',[Validators.required, Validators.email]],
-      password:['',[Validators.required, Validators.minLength(8)]],
-      deviceInfo:this.formBuilder.group({
-        deviceId: ["17867868768"],
-        deviceType: ["DEVICE_TYPE_ANDROID"],
-        notificationToken: ["67657575eececc34"],
-      })
+  constructor(private authService: AuthService, private tokenStorage: TokenStorageService) { }
 
+  ngOnInit(): void {
+    if (this.tokenStorage.getToken()) {
+      this.isLoggedIn = true;
+      this.roles = this.tokenStorage.getUser().roles;
     }
-  )
-}
+  }
 
-ngOnInit(): void {
-}
+  onSubmit(): void {
+    const { username, password } = this.form;
 
-get Email(){
-  return this.form.get('email');
-}
+    this.authService.login(username, password).subscribe(data=> {
+        this.tokenStorage.saveToken(data.accessToken);
+        this.tokenStorage.saveUser(data);
 
-get Password(){
-  return this.form.get('password');
-}
-onEnviar(event:Event) {
-  event.preventDefault;
-  this.authService.IniciarSesion(this.form.value).subscribe(data=>{
-    console.log("DATA: " + JSON.stringify(data));
-    this.router.navigate(['/portfolio']);
-  })
-}
+        this.isLoginFailed = false;
+        this.isLoggedIn = true;
+        this.roles = this.tokenStorage.getUser().roles;
+        this.reloadPage();
+      },
+      err => {
+        this.errorMessage = err.error.message;
+        this.isLoginFailed = true;
+      }
+    );
+  }
+
+  reloadPage(): void {
+    window.location.reload();
+  }
 }

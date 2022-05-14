@@ -1,12 +1,25 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './components/login/login.component';
+import { Routes, RouterModule } from '@angular/router';
+
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.LoginComponent';
+import { HomeComponent } from './home/home.component';
+import { ProfileComponent } from './profile/profile.component';
+import { BoardUserComponent } from './board-user/board-user.component';
+import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
+import { BoardAdminComponent } from './board-admin/board-admin.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
-import { GuardGuard } from './services/guard.guard';
+import { AuthGuard } from './services/guard.guard';
 
 const routes: Routes = [
-  {path: 'login', component:LoginComponent},
-  {path: 'portfolio', component:PortfolioComponent, canActivate:[GuardGuard]},
+  { path: 'home', component: HomeComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'profile', component: ProfileComponent },
+  { path: 'user', component: BoardUserComponent },
+  { path: 'mod', component: BoardModeratorComponent },
+  { path: 'admin', component: BoardAdminComponent },
+  {path: 'portfolio', component:PortfolioComponent, canActivate:[AuthGuard]},
   {path: '', redirectTo: 'login', pathMatch:'full'},
 ];
 
@@ -15,3 +28,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
