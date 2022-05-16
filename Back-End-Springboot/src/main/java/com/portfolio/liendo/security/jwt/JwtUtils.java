@@ -15,10 +15,17 @@ import io.jsonwebtoken.*;
 public class JwtUtils {
 	private static final Logger logger = LoggerFactory.getLogger(JwtUtils.class);
 
+<<<<<<< HEAD
 	@Value("liendoSecretKey")
 	private String jwtSecret;
 
 	@Value("86400000")
+=======
+	@Value("${liendo.app.jwtSecret}")
+	private String jwtSecret;
+
+	@Value("${liendo.app.jwtExpirationMs}")
+>>>>>>> f40bfbfd21c2d59ae44cb633208c8261d9d6346b
 	private int jwtExpirationMs;
 
 	public String generateJwtToken(Authentication authentication) {

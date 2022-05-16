@@ -32,7 +32,11 @@ export class TokenStorageService {
     if (user) {
       return JSON.parse(user);
     }
+<<<<<<< HEAD
 
     return {};
   }
+=======
+  } 
+>>>>>>> f40bfbfd21c2d59ae44cb633208c8261d9d6346b
 }
