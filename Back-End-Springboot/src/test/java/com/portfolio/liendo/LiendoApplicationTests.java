@@ -1,10 +1,10 @@
-package com.portfolio.wrl;
+package com.portfolio.liendo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WrlApplicationTests {
+class LiendoApplicationTests {
 
 	@Test
 	void contextLoads() {

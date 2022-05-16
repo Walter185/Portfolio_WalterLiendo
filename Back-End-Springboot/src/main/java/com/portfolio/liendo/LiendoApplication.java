@@ -1,13 +1,13 @@
-package com.portfolio.wrl;
+package com.portfolio.liendo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WrlApplication {
+public class LiendoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WrlApplication.class, args);
+		SpringApplication.run(LiendoApplication.class, args);
 	}
 
 }
