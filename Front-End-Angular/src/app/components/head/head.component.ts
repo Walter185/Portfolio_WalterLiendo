@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { persona } from 'src/app/model/persona.model'
-import { PersonaService } 'src/app/_services/persona.service'
+import { persona } from 'src/app/model/persona.model';
+import { UserService } from 'src/app/_services/user.service';
 
 @Component({
   selector: 'app-head',
@@ -8,12 +8,13 @@ import { PersonaService } 'src/app/_services/persona.service'
   styleUrls: ['./head.component.css']
 })
 export class HeadComponent implements OnInit {
-persona: persona = new persona("", "","");
+  myPortfolio:any;
+  persona:persona = new persona("", "", "");
 
-  constructor(public personaService:PersonaService) { }
+  constructor(private userService:UserService) { }
 
   ngOnInit(): void {
-   
+    this.userService.getPersona().subscribe(data => {this.persona = data})
   }
 
 }

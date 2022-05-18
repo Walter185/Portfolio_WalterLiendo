@@ -19,14 +19,14 @@ import com.portfolio.liendo.security.jwt.AuthTokenFilter;
 import com.portfolio.liendo.security.services.UserDetailsServiceImpl;
 
 @Configuration
-@EnableWebSecurity
-@EnableGlobalMethodSecurity(
-    // securedEnabled = true,
-    // jsr250Enabled = true,
-    prePostEnabled = true)
+//@EnableWebSecurity
+//@EnableGlobalMethodSecurity(
+  //  securedEnabled = false,
+  // jsr250Enabled = false,
+ //  prePostEnabled = false)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
-  @Autowired
-  UserDetailsServiceImpl userDetailsService;
+ @Autowired
+ UserDetailsServiceImpl userDetailsService;
 
   @Autowired
   private AuthEntryPointJwt unauthorizedHandler;
