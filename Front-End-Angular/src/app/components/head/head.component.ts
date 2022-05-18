@@ -8,8 +8,7 @@ import { UserService } from 'src/app/_services/user.service';
   styleUrls: ['./head.component.css']
 })
 export class HeadComponent implements OnInit {
-  myPortfolio:any;
-  persona:persona = new persona("", "", "");
+  persona:persona = new persona("","","","","","","","","","","","");
 
   constructor(private userService:UserService) { }
 
