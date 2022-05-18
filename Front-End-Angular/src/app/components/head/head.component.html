@@ -6,20 +6,20 @@
   <div class="img-about mb-3" id="profile-pfpEdit">
     <img src="{{persona.img}}" title="Walter Liendo" id="profile-pfp">
     <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#editProfile"></i>
-  </div>-->
+  </div>
   <div id="info-data">
     <div>
       <h1>{{persona.nombre}}{{persona.apellido}}</h1>
       <div id="info-company">{{persona.ocupacion}}</div>
       <div id="info-contact">
         <span>{{persona.ubicacion}}</span>
-        <a routerLink="/footer" aria-current="page">Informacion de contacto</a>
+        <a routerLink="moreinfo" ria-current="page">Informacion de contacto</a>
       </div>
     </div>
     <ul id="info-details">
      <li>
         <a href={{persona.urlinst}} target="_blank" rel="noopener" style="text-decoration:none;">
-      <img src="{{persona.imginst}}" alt="" class="logo-image">//
+      <img src="{{persona.imginst}}" alt="" class="logo-image">
           <h5>{{persona.institucion}}</h5>
         </a>
       </li>

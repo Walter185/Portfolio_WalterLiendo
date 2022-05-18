@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/_services/portfolio.service';
+import { UserService } from 'src/app/_services/user.service';
+import { persona } from 'src/app/model/persona.model';
 
 @Component({
   selector: 'app-aboutme',
@@ -7,13 +8,13 @@ import { PortfolioService } from 'src/app/_services/portfolio.service';
   styleUrls: ['./aboutme.component.css']
 })
 export class AboutmeComponent implements OnInit {
-  myPortfolio:any;
-  constructor(private portfolioService:PortfolioService) { }
+    persona:persona = new persona("","","","","","","","","","","","");
+
+  constructor(private userService:UserService) { }
 
   ngOnInit(): void {
-    this.portfolioService.getData().subscribe(data =>{
-      this.myPortfolio=data;
-    });
-    }
+    this.userService.getPersona().subscribe(data => {this.persona = data})
+  }
+
   }
 
