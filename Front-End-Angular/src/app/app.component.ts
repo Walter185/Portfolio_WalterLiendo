@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TokenStorageService } from './services/token-storage.service';
+import { TokenStorageService } from './_services/token-storage.service';
 
 @Component({
   selector: 'app-root',
@@ -7,11 +7,11 @@ import { TokenStorageService } from './services/token-storage.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  private roles: string[] = [];
+  private roles: string[];
   isLoggedIn = false;
   showAdminBoard = false;
   showModeratorBoard = false;
-  username?: string;
+  username: string;
 
   constructor(private tokenStorageService: TokenStorageService) { }
 
