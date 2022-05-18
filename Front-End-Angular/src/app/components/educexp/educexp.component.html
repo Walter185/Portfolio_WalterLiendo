@@ -1,0 +1,235 @@
+<!-- Experience -->
+<section class="card mat-card mx-auto" id="experience">
+    <div class="title-button">
+        <h3 class="content-title">Experiencia</h3>
+        <i class="fa-solid fa-plus" data-bs-toggle="modal" data-bs-target="#addexperience"></i>
+    </div>
+    <div class="title-button">
+    </div>
+    <br>
+    <div>
+        <ul class="items-list">
+            <li *ngFor="let experience of experienceList">
+                <div class="data-container">
+                    <div class="logo-image">
+                        <img class="logo-image" [src]="experience.img" />
+                        <div class="list-info">
+                        </div>
+                    </div>
+                </div>
+                <h5 class="timeline-date">
+                    <i class="fa-regular fa-calendar"></i>
+                    {{experience.start}} - {{experience.end}}
+                </h5>
+                <div class="title-button">
+                    <h2 class="timeline-title" id="bold">{{experience.company}}<br>
+                        {{experience.position}} - ({{experience.mode}}) Detalle: {{experience.detail}}</h2>
+                    <div class="d-block">
+                        <span style="padding-right: 5px;"><i class="fa-solid fa-edit" data-bs-toggle="modal"
+                                data-bs-target="#editeducation"></i></span>
+                        <span style="padding-right: 5px;"><i class="fa-solid fa-trash" data-bs-toggle="modal"
+                                data-bs-target="#eliminar"></i></span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!--educacion-->
+<section class="card mat-card mx-auto" id="education">
+    <div class="title-button">
+        <h3 class="content-title">Educación</h3>
+        <i class="fa-solid fa-plus" data-bs-toggle="modal" data-bs-target="#addeducation"></i>
+    </div>
+    <div class="title-button">
+    </div>
+    <br>
+    <div>
+        <ul class="items-list">
+            <li *ngFor="let education of educationList">
+                <div class="data-container">
+                    <div class="logo-image">
+                        <img class="logo-image" [src]="education.img" />
+                        <div class="list-info">
+                        </div>
+                    </div>
+                </div>
+                <h5 class="timeline-date">
+                    <i class="fa-regular fa-calendar"></i>
+                    {{education.start}} - {{education.end}}
+                </h5>
+                <div class="title-button">
+                    <h2 class="timeline-title" id="bold">{{education.school}}<br>
+                        {{education.degree}} Detalle: {{education.otherInformation}}</h2>
+                    <div class="d-block">
+                        <span style="padding-right: 5px;"><i class="fa-solid fa-edit" data-bs-toggle="modal"
+                                data-bs-target="#editeducation"></i></span>
+                        <span style="padding-right: 5px;"><i class="fa-solid fa-trash" data-bs-toggle="modal"
+                                data-bs-target="#eliminar"></i></span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+
+<div class="modal fade" id="editeducation" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Modificar educación</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="nameImput" class="form-label">Título</label>
+                        <input class="form-control" type="text" placeholder="Escriba título conseguido"
+                            aria-label="Escriba título conseguido">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nameImput" class="form-label">Escuela</label>
+                        <input class="form-control" type="text" placeholder="Escriba la escuela donde lo consiguió"
+                            aria-label="Escriba la escuela donde lo consiguió">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">¿Otra información que quiera
+                            agregar?</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary ms-2">Guardar cambios</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="addeducation" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Añadir educación</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="nameImput" class="form-label">Título</label>
+                        <input class="form-control" type="text" placeholder="Escriba título conseguido"
+                            aria-label="Escriba título conseguido">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nameImput" class="form-label">Escuela</label>
+                        <input class="form-control" type="text" placeholder="Escriba la escuela donde lo consiguió"
+                            aria-label="Escriba la escuela donde lo consiguió">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">¿Otra información que quiera
+                            agregar?</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary ms-2">Guardar cambios</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="editexperience" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Modificar experiencia laboral</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="nameImput" class="form-label">Cargo</label>
+                        <input class="form-control" type="text" placeholder="Escriba cargo conseguido"
+                            aria-label="Escriba cargo conseguido">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nameImput" class="form-label">Lugar de trabajo</label>
+                        <input class="form-control" type="text" placeholder="Escriba la empresa donde trabajó"
+                            aria-label="Escriba la empresa donde trabajó">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Describa las actividades del cargo
+                            que
+                            ocupaba</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary ms-2">Guardar cambios</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="addexperience" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Añadir experiencia laboral</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="nameImput" class="form-label">Cargo</label>
+                        <input class="form-control" type="text" placeholder="Escriba cargo conseguido"
+                            aria-label="Escriba cargo conseguido">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nameImput" class="form-label">Lugar de trabajo</label>
+                        <input class="form-control" type="text" placeholder="Escriba la empresa donde trabajó"
+                            aria-label="Escriba la empresa donde trabajó">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Describa las actividades del cargo
+                            que
+                            ocupaba</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary ms-2">Guardar cambios</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="eliminar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Eliminar elemento</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ¿Seguro que querés eliminar este elemento?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END Educación y Experiencia -->
