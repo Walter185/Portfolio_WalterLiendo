@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { FooterComponent } from './components/footer/footer.component';
+import { Routes, RouterModule } from '@angular/router';
+import { ProfileComponent } from './components/encabezado/header.component';
 const routes: Routes = [
-  {path: 'footer', component:FooterComponent}
+  
+  { path: 'profile', component: ProfileComponent },
+  {path: '', redirectTo: 'login', pathMatch:'full'},
 ];
 
 @NgModule({
@@ -10,3 +12,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+

@@ -6,18 +6,17 @@ import { Data } from '@angular/router';
 
 const httpOptions = {
   headers: new HttpHeaders({
-    'Content-Type': 'application/json'
-  })
-}
+   'Content-Type': 'application/json'
+  })}
 @Injectable({
   providedIn: 'root'
 })
 export class PortfolioService {
-
+  url:string="http://localhost:4200/api/";
   constructor(private httpClient:HttpClient) { }
 
   getData(): Observable<any> {
-    return this.httpClient.get('./assets/data/data.json');
+    return this.httpClient.get(this.url+"persona");
   }
   saveData(data:Data): Observable<any> {
     return this.httpClient.post<Data>('./assets/data/data.json', data, httpOptions);
