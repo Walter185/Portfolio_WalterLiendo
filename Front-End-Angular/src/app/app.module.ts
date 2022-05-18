@@ -28,7 +28,7 @@ import { HomeComponent } from './components/home/home.component';
 import { BoardUserComponent } from './components/board-user/board-user.component';
 import { BoardModeratorComponent } from './components/board-moderator/board-moderator.component';
 import { BoardAdminComponent } from './components/board-admin/board-admin.component';
-
+import { CommonModule } from '@angular/common'; 
 
 
 const routes:Routes=[
@@ -52,6 +52,7 @@ const routes:Routes=[
     BoardUserComponent,
     BoardModeratorComponent,
     BoardAdminComponent,
+    MatProgressBarModule,
 
   ],
   imports: [
