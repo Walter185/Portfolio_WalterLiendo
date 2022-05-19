@@ -92,6 +92,39 @@
   
   /* =============== NavBar =========== */
   
+
+  #btnreg {
+    margin-left: -17px;
+    margin-top: 20px;
+  }
+
+  #btnreg2 {
+    margin-top: -28px;
+    margin-left: 180px;
+  }
+  
+  #btnlog {
+    margin-top: 20px;
+  }
+  
+  #regis {
+    margin-top: 20px;
+  }
+
+  #barra{
+    margin-left: 10px;
+  }
+
+  .barcontainer{
+   display: flex;
+   justify-content: space-between;
+  }
+
+  .navitem {
+    margin-right: 20px;
+  }
+
+
   .navbar-brand {
     font-weight: 500;
     text-align: left;
@@ -290,6 +323,12 @@
   #banner {
     height: 30%;
     width: 100%;
+  }
+
+  #botones {
+    margin-top: 10px;
+    justify-content:space-around;
+    
   }
   
   .project .content .card .card-img {
