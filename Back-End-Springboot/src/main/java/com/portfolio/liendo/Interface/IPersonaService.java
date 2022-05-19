@@ -1,7 +1,7 @@
 
 package com.portfolio.liendo.Interface;
 
-import com.portfolio.liendo.Entity.Persona;
+import com.portfolio.liendo.models.Persona;
 import java.util.List;
 
 
