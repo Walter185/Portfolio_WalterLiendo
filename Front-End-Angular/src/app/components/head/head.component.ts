@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { persona } from 'src/app/model/persona.model';
 import { UserService } from 'src/app/_services/user.service';
+import { Routes } from '@angular/router';
 
 @Component({
   selector: 'app-head',
