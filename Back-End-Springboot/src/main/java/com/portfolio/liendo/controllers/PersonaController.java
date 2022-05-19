@@ -1,7 +1,7 @@
 
-package com.portfolio.liendo.Controller;
+package com.portfolio.liendo.controllers;
 
-import com.portfolio.liendo.Entity.Persona;
+import com.portfolio.liendo.models.Persona;
 import com.portfolio.liendo.Interface.IPersonaService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;

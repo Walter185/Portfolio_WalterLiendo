@@ -1,5 +1,5 @@
 
-package com.portfolio.liendo.Entity;
+package com.portfolio.liendo.models;
 
 import com.sun.istack.NotNull;
 import javax.persistence.Entity;

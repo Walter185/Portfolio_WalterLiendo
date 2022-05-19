@@ -1,6 +1,6 @@
 package com.portfolio.liendo.Service;
 
-import com.portfolio.liendo.Entity.Persona;
+import com.portfolio.liendo.models.Persona;
 import com.portfolio.liendo.Interface.IPersonaService;
 import com.portfolio.liendo.Repository.IPersonaRepository;
 import java.util.List;
