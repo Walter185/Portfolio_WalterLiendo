@@ -1,26 +1,26 @@
 <div class="card mat-card mx-auto" id="card-about">
   <div id="profile-background">
-  <img class="profile-cover" [src]="myPortfolio.bannerImage" alt="Card image cap">
+  <img class="profile-cover" src="{{persona.banner}}" alt="Card image cap">
 </div>
 <div id="info" style="padding:16px">
   <div class="img-about mb-3" id="profile-pfpEdit">
-    <img [src]="myPortfolio.profilePicture" title="Walter Liendo" id="profile-pfp">
+    <img src="{{persona.img}}" title="Walter Liendo" id="profile-pfp">
     <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#editProfile"></i>
   </div>
   <div id="info-data">
     <div>
-      <h1>{{myPortfolio.name}}</h1>
-      <div id="info-company">{{myPortfolio.ocupation}}</div>
+      <h1>{{persona.nombre}}{{persona.apellido}}</h1>
+      <div id="info-company">{{persona.ocupacion}}</div>
       <div id="info-contact">
-        <span>{{myPortfolio.ubication}}</span>
-        <a routerLink="/footer" aria-current="page">Informacion de contacto</a>
+        <span>{{persona.ubicacion}}</span>
+        <a routerLink="moreinfo" ria-current="page">Informacion de contacto</a>
       </div>
     </div>
     <ul id="info-details">
-      <li>
-        <a href={{myPortfolio.url}} target="_blank" rel="noopener" style="text-decoration:none;">
-          <img [src]="myPortfolio.institutionImage" alt="" class="logo-image">
-          <h5>{{myPortfolio.institution}}</h5>
+     <li>
+        <a href={{persona.urlinst}} target="_blank" rel="noopener" style="text-decoration:none;">
+      <img src="{{persona.imginst}}" alt="" class="logo-image">
+          <h5>{{persona.institucion}}</h5>
         </a>
       </li>
     </ul>

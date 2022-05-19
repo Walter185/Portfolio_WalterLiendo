@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { PortfolioService } from 'src/app/services/portfolio.service';
+import { PortfolioService } from 'src/app/_services/portfolio.service';
 
 @Component({
   selector: 'app-edu-exp',

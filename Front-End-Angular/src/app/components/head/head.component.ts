@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/_services/portfolio.service';
+import { persona } from 'src/app/model/persona.model';
+import { UserService } from 'src/app/_services/user.service';
 
 @Component({
   selector: 'app-head',
@@ -7,13 +8,12 @@ import { PortfolioService } from 'src/app/_services/portfolio.service';
   styleUrls: ['./head.component.css']
 })
 export class HeadComponent implements OnInit {
-  myPortfolio:any;
-  constructor(private portfolioService:PortfolioService) { }
+  persona:persona = new persona("","","","","","","","","","","","");
+
+  constructor(private userService:UserService) { }
 
   ngOnInit(): void {
-    this.portfolioService.getData().subscribe(data=> {
-      this.myPortfolio=data;
-    });
+    this.userService.getPersona().subscribe(data => {this.persona = data})
   }
 
 }

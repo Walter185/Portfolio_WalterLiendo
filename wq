@@ -1,0 +1,670 @@
+[33mcommit 93e2c438e260798d2a3fe0e0090a52a8cc98b189[m[33m ([m[1;36mHEAD -> [m[1;32mbackend[m[33m, [m[1;31morigin/backend[m[33m)[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Wed May 18 15:33:21 2022 -0300
+
+    persona
+
+[33mcommit de6f1fb0e73834cec1c0c52031c40fb9cbae780a[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Wed May 18 13:05:06 2022 -0300
+
+    persona
+
+[33mcommit 539a55ed81acf7003483c19c24d3c303d2995b11[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Wed May 18 13:04:28 2022 -0300
+
+    persona
+
+[33mcommit 130019da720444b37f82accc50d93698c37126a7[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Wed May 18 12:24:00 2022 -0300
+
+    model
+
+[33mcommit ca4c0b8685c535855403515ddc5a343d2a45533d[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Wed May 18 11:30:33 2022 -0300
+
+    punto de origen
+
+[33mcommit 0b5eb1f69f10da990bba30ac91e91e3e9f8dfc22[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Wed May 18 11:29:53 2022 -0300
+
+    punto de origen
+
+[33mcommit 1c3335400d326d5ba463e76446421f40993d2166[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Wed May 18 11:11:22 2022 -0300
+
+    migracion del back a git 2
+
+[33mcommit 1511815df137a26f472105dd074b1746b2e89658[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Wed May 18 10:59:59 2022 -0300
+
+    migracion del back a git
+
+[33mcommit 0b27a9fd1f774a6fac85a87892e465bdbec079c5[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Wed May 18 10:47:58 2022 -0300
+
+    correcionerrores
+
+[33mcommit bb21deb03456266ee0bd1c85c846bd98972210bf[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Wed May 18 10:37:00 2022 -0300
+
+    subiendo el back a git
+
+[33mcommit af18c0fd6b0d07a044b66b84d73556c81c5d3eec[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Wed May 18 10:34:21 2022 -0300
+
+    login
+
+[33mcommit c4e51761150b4fb21adaee5ddd5bca549217eb1c[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Wed May 18 10:33:12 2022 -0300
+
+    jwt2
+
+[33mcommit 37e25b5d6d43ee71c367cf9e6025c5181d41935f[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Wed May 18 10:31:48 2022 -0300
+
+    jwt
+
+[33mcommit 7604ae3e716814a0a4ee34a608afd049c1318797[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Wed May 18 10:29:07 2022 -0300
+
+    jwt
+
+[33mcommit 9e33d5247bd5a7d47761e57f4fd64aab0d55a758[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Tue May 17 21:31:37 2022 -0300
+
+    correcion footer
+
+[33mcommit 7aedc5923542df5aa3bdab21ed9721dbc22c24cb[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Mon May 16 19:13:08 2022 -0300
+
+    lipieza
+
+[33mcommit 7781a71cf15dfdcc48599c176a010595bad367cb[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Mon May 16 19:10:20 2022 -0300
+
+    nuevocomienzo
+
+[33mcommit 59cf45eb02fd98e0295833a28639571d9a3a9bd9[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Mon May 16 19:10:02 2022 -0300
+
+    nuevocomienzo
+
+[33mcommit 7ff014194f107c8d403f72dcb80abaaa7f670165[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Mon May 16 16:38:54 2022 -0300
+
+    limpieza
+
+[33mcommit 22b596d354615abb5160081fa6c16194f2198c3a[m
+Merge: 2a59899 f40bfbf
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Mon May 16 16:34:05 2022 -0300
+
+    Merge branch 'backend' of https://github.com/Walter185/Portfolio_WalterLiendo into backend
+
+[33mcommit 2a598997a0f7fb2ec18f086a538a7d1aa0cfb247[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Mon May 16 16:33:40 2022 -0300
+
+    volver a empezar
+
+[33mcommit f40bfbfd21c2d59ae44cb633208c8261d9d6346b[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sun May 15 22:39:59 2022 -0300
+
+    jwt2
+
+[33mcommit e1dc30d75cdb6a84ec16cfe2237f28cc1168c948[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sun May 15 21:37:21 2022 -0300
+
+    roles
+
+[33mcommit 2474e7f48780723c9497a8baea38d71837d55a98[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sun May 15 20:25:48 2022 -0300
+
+    jwt
+
+[33mcommit 134fb726b22a032b49a24c8c33126c3502a368e7[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sun May 15 12:11:54 2022 -0300
+
+    actualizacion
+
+[33mcommit 0e7f77f0b6f6f35f6453f026b01d722e437a6d04[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sun May 15 10:55:05 2022 -0300
+
+    reinicio3
+
+[33mcommit afcd7d06620e1e55d37bbe55af00dcea55540a34[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sun May 15 09:28:17 2022 -0300
+
+    backnuevo
+
+[33mcommit 1830c03baf0e4f461775d46d01e47d1b3f133c6f[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sun May 15 08:44:49 2022 -0300
+
+    reinicio
+
+[33mcommit 599d0857f01399d7faab82ca6d380e06304a0b3d[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sat May 14 23:48:24 2022 -0300
+
+    controller
+
+[33mcommit 8b17818c08ce7d5fba04749c3b830944856e9953[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sat May 14 23:32:55 2022 -0300
+
+    angular
+
+[33mcommit ed133705c23cf85323159f89b263d848df7f0fff[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sat May 14 23:32:45 2022 -0300
+
+    angular
+
+[33mcommit 96f755644f644d63bd2e6fe047674e8d09b70067[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sat May 14 21:07:05 2022 -0300
+
+    entidad persona
+
+[33mcommit dad0f12b626c9abc331d3e5e8b184879297f1ffb[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sat May 14 18:49:18 2022 -0300
+
+    backend
+
+[33mcommit 7f7bc81adf5b8fea55796fd5bb12f60fbdefa519[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sat May 14 18:01:26 2022 -0300
+
+    login
+
+[33mcommit 0baab2cbff712ed1e9eb5c9eaa567a02d63898a3[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sat May 14 14:20:20 2022 -0300
+
+    correcion errrores
+
+[33mcommit a56422076974c05c66d28724c7bd8b760ad7bec9[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Wed May 11 22:44:38 2022 -0300
+
+    login2
+
+[33mcommit 94f1f3628464ab4e4fc88423741a8915aaa7d0aa[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Wed May 11 20:40:14 2022 -0300
+
+    login
+
+[33mcommit 81e1c01d88054e20a68071afabf1130f02a9a214[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Wed May 11 17:21:37 2022 -0300
+
+    login
+
+[33mcommit 20b615c7618f14dbd361de4bdc5546e163fba6a4[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Wed May 11 16:24:05 2022 -0300
+
+    properties
+
+[33mcommit 76034f1148b2a91dd29511fa6a727607984f3edb[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Wed May 11 16:02:17 2022 -0300
+
+    inicializacion spring
+
+[33mcommit 316d4676dcb15c9c0eba71a33560fe52e8df3f56[m[33m ([m[1;32mmaster[m[33m)[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Wed May 11 15:02:27 2022 -0300
+
+    update
+
+[33mcommit 40e533053a9f9df9c7a5a0a95e93e2205b3d2966[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sun May 1 14:37:59 2022 -0300
+
+    img local
+
+[33mcommit 74bd95860f45705a85c986fc88e971bd122f04f7[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sat Apr 30 15:22:08 2022 -0300
+
+    auth
+
+[33mcommit 160edc341af9e960147750625030503b1271aaa2[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Wed Apr 27 23:04:24 2022 -0300
+
+    login
+
+[33mcommit 9d4a1bc42abb8ff2b18a09e08495abb5f4359200[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Wed Apr 27 21:17:03 2022 -0300
+
+    server
+
+[33mcommit f5e608b23ebdf54745f55a5a1440395370495370[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Tue Apr 26 23:40:23 2022 -0300
+
+    jwt
+
+[33mcommit ea573a930a8ef8e587940cd28d8ab1ca5a0653b7[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Mon Apr 25 22:19:40 2022 -0300
+
+    limpieza
+
+[33mcommit 7e6d4c28c888184158d75f0c2507e0fdedfa927f[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sun Apr 24 22:45:53 2022 -0300
+
+    mejora de projects
+
+[33mcommit abf21681cd0611ffea92e2cf82a68535cb621900[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sun Apr 24 16:37:41 2022 -0300
+
+    aboutme
+
+[33mcommit 3e760228f777954224b1d1054d2fbc599e16b8ce[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sun Apr 24 15:25:50 2022 -0300
+
+    mejora del skill
+
+[33mcommit c748853085f8d0defee4ac71cf5463603b62cb1d[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sun Apr 24 10:56:26 2022 -0300
+
+    cambio de imagen
+
+[33mcommit 7604407512559a03b748f564f54578e14e25076a[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sat Apr 23 23:43:52 2022 -0300
+
+    npm install –g @angular/cli@latest
+
+[33mcommit e317ccb054b8cf8e221653c4e6cbdf07d445e71a[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sat Apr 23 16:10:11 2022 -0300
+
+    json-server
+
+[33mcommit b62c5f5c1a56153fe9757b985f012d2191078078[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Tue Apr 19 19:36:26 2022 -0300
+
+    binding
+
+[33mcommit ff7e29bcc19c67cfcc90ebead20596d61dd98f4a[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Tue Apr 19 13:28:22 2022 -0300
+
+    ajustes varios
+
+[33mcommit 7c27d4ce000dc7d0abd864c65ea6df66486df672[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Tue Apr 19 10:17:37 2022 -0300
+
+    correcion de errores
+
+[33mcommit ae8330f2fd7b42ee413cb454979c29694708101f[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Mon Apr 18 10:45:52 2022 -0300
+
+    ajuste footer
+
+[33mcommit bbfe00220001978af30ee9a4259bf1ad3f8a6cc6[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sun Apr 17 18:21:07 2022 -0300
+
+    style
+
+[33mcommit b43aa7e3366e25e9e83a6cb52e908e83bbc3ba90[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sun Apr 17 15:42:00 2022 -0300
+
+    proyectos actualizados
+
+[33mcommit 67091e2e9c9009d710b22024a85b540d175cada2[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sun Apr 17 11:23:23 2022 -0300
+
+    mejora visual
+
+[33mcommit ce12d63449ccaef361c3f1d296da20ddaad55232[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sun Apr 17 10:32:46 2022 -0300
+
+    EXPERIENCIA
+
+[33mcommit 87836500b52a6c0000d92b0c1a31a1b467339ed2[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sun Apr 17 09:28:03 2022 -0300
+
+    ingreso de informacion
+
+[33mcommit 39ced42181cb4c60a36ac84a5e762b1f2204f80c[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sun Apr 17 00:13:01 2022 -0300
+
+    json
+
+[33mcommit 09703bb26d04ce62882c3af07b81dc1692a028f4[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sat Apr 16 23:31:05 2022 -0300
+
+    actualizacion 2
+
+[33mcommit 364b22248cbb179ef0fc692f3a2ab67f0355782a[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sat Apr 16 22:58:47 2022 -0300
+
+    depuracion
+
+[33mcommit 7d83fa056dc7676c6db0313ddfa1226995e2b57d[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sat Apr 16 22:57:19 2022 -0300
+
+    navbar
+
+[33mcommit 6620f2d427df03949e9392ce8421719457a62da3[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sat Apr 16 21:44:33 2022 -0300
+
+    cambio de graficos
+
+[33mcommit bcf31e28fcab54af2da2d0d661c61c14a19f48e9[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sat Apr 16 21:14:27 2022 -0300
+
+    incorporacion de imports
+
+[33mcommit e108769925ce311870c16c00eb7f988d5318ba20[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sat Apr 16 20:32:01 2022 -0300
+
+    limpieza specs
+
+[33mcommit 2ab733a32e9ebcbfb5179d839bb8a237c198d394[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sat Apr 16 20:14:10 2022 -0300
+
+    reformulacion de aboutme
+
+[33mcommit 6dec853f0726bd38a4d79ab7bdbc90ba36a5018f[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Fri Apr 15 16:31:54 2022 -0300
+
+    eliminacion de specs
+
+[33mcommit abcc97333a317fc91326f64670083cfef4cbd9a0[m
+Merge: 30f9100 9e4603a
+Author: Walter Liendo <99099002+Walter185@users.noreply.github.com>
+Date:   Thu Apr 14 22:45:02 2022 -0300
+
+    Merge pull request #11 from Walter185/Walter185-patch-2
+    
+    Create readme.txt
+
+[33mcommit 9e4603a1308305e5892674dff9636e3470321fc3[m[33m ([m[1;31morigin/Walter185-patch-2[m[33m)[m
+Author: Walter Liendo <99099002+Walter185@users.noreply.github.com>
+Date:   Thu Apr 14 22:44:51 2022 -0300
+
+    Create readme.txt
+
+[33mcommit 30f91003208c24eef6deb14d0aefbfc3b6422f0a[m
+Merge: 2f7c9b3 70b474e
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Thu Apr 14 22:43:44 2022 -0300
+
+    Merge branch 'master' of https://github.com/Walter185/Portfolio_WalterLiendo
+
+[33mcommit 2f7c9b376c084c49ea611c2224fa82d2a9f9f91f[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Thu Apr 14 22:43:41 2022 -0300
+
+    ajustes varios
+
+[33mcommit 70b474ec913b2add38f8cf8c84fff4209d694d3b[m
+Author: Walter Liendo <99099002+Walter185@users.noreply.github.com>
+Date:   Thu Apr 14 21:03:42 2022 -0300
+
+    Delete Database
+
+[33mcommit ff40311f12accc352353bcd949bbe76c40bc0aa1[m
+Merge: b265ca1 f825ab1
+Author: Walter Liendo <99099002+Walter185@users.noreply.github.com>
+Date:   Thu Apr 14 21:02:15 2022 -0300
+
+    Merge pull request #10 from Walter185/Walter185-patch-1
+    
+    Create Database
+
+[33mcommit f825ab1ebad0ac411f5f80b970ea2e6e04bbf41b[m[33m ([m[1;31morigin/Walter185-patch-1[m[33m)[m
+Author: Walter Liendo <99099002+Walter185@users.noreply.github.com>
+Date:   Thu Apr 14 21:01:42 2022 -0300
+
+    Create Database
+
+[33mcommit b265ca19082ebd415c5d911d8d1951536c50d4c8[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Thu Apr 14 20:57:31 2022 -0300
+
+    cambio de nombreç
+
+[33mcommit b7fe04f6482d3a18391e75cea94fb3e847ae03da[m
+Merge: 7c49382 f240e04
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Thu Apr 14 20:16:08 2022 -0300
+
+    rename
+
+[33mcommit 7c493823e846377e1aab8d4ebeec2f8f8f96d875[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Thu Apr 14 20:11:02 2022 -0300
+
+    rename de proyecto
+
+[33mcommit f240e0421be20677dd93c730c1e71c22f46100c9[m
+Merge: 6a43c49 69c7a9b
+Author: Walter Liendo <99099002+Walter185@users.noreply.github.com>
+Date:   Sat Apr 9 09:51:18 2022 -0300
+
+    Merge pull request #8 from Walter185/develop
+    
+    Develop
+
+[33mcommit 69c7a9ba935461080dae7485e79dcb8e489ef2c3[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sat Apr 9 09:50:38 2022 -0300
+
+    ajuste de media
+
+[33mcommit 8d39458cbf772b2ca48900831283a4750e62ea86[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Mon Apr 4 10:55:57 2022 -0300
+
+     responsive
+
+[33mcommit 2ec5abbffc32345793861e6d057ae93c482f9564[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Fri Apr 1 21:00:12 2022 -0300
+
+    boton inicio
+
+[33mcommit 6a43c49364e8917137c6a354ab84ea45216133d2[m
+Merge: beb54f1 172973c
+Author: Walter Liendo <99099002+Walter185@users.noreply.github.com>
+Date:   Tue Mar 22 21:06:22 2022 -0300
+
+    Merge pull request #7 from Walter185/develop
+    
+    Develop
+
+[33mcommit 172973c8c363378f549b68d9ab6f264695e20f06[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Tue Mar 22 21:05:35 2022 -0300
+
+    footer
+
+[33mcommit 6dabdffb5cdc1568ae981a100f789df2fe8d6bc4[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Tue Mar 22 19:50:55 2022 -0300
+
+    agrego proyectos
+
+[33mcommit beb54f1213d59202d20014d6c6c112e1b6a9ab8e[m
+Merge: a0bf319 8067284
+Author: Walter Liendo <99099002+Walter185@users.noreply.github.com>
+Date:   Tue Mar 22 16:47:02 2022 -0300
+
+    Merge pull request #6 from Walter185/develop
+    
+    Merge branch 'master' of https://github.com/Walter185/Portfolio_Walte…
+
+[33mcommit 8067284126d28a4204aa0cf1b40ce11c09bbbb31[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Tue Mar 22 16:46:32 2022 -0300
+
+    Merge branch 'master' of https://github.com/Walter185/Portfolio_WalterLiendo
+
+[33mcommit a0bf3194cf5282384fcd39d3882e10dd75e71dc9[m
+Merge: 768e2f2 a15956d
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sun Mar 20 18:58:24 2022 -0300
+
+    Merge branch 'master' of https://github.com/Walter185/Portfolio_WalterLiendo
+
+[33mcommit 768e2f2b2f756c0a699764c3cc161332ebdea98e[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sun Mar 20 18:52:29 2022 -0300
+
+    skills
+
+[33mcommit a15956d581560607af01f15f40990b6f8feca97b[m
+Merge: 0017a62 17cbf7d
+Author: Walter Liendo <99099002+Walter185@users.noreply.github.com>
+Date:   Sun Mar 20 18:51:49 2022 -0300
+
+    Merge pull request #5 from Walter185/develop
+    
+    Develop
+
+[33mcommit 17cbf7df4a5f1ecd866d09cfea64c834b8cad002[m
+Merge: 5fdc61d 66a6ee3
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sun Mar 20 18:50:31 2022 -0300
+
+    Merge remote-tracking branch 'refs/remotes/origin/develop' into develop
+
+[33mcommit 5fdc61db2816b54d09d8a796f4099fbf83874ea0[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sun Mar 13 19:45:46 2022 -0300
+
+    v0.3
+
+[33mcommit 0017a624995530c4407d0bb44c00b014328d8444[m
+Merge: bfff9b7 66a6ee3
+Author: Walter Liendo <99099002+Walter185@users.noreply.github.com>
+Date:   Sun Mar 13 19:46:34 2022 -0300
+
+    Merge pull request #4 from Walter185/develop
+    
+    v0.3
+
+[33mcommit 66a6ee398991a19375aa172fc5526dcfcecfc84e[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sun Mar 13 19:45:46 2022 -0300
+
+    v0.3
+
+[33mcommit bfff9b743b419e1f2e2a3b4f576b7a26370a0c69[m
+Merge: fc8e2aa 4ae26c3
+Author: Walter Liendo <99099002+Walter185@users.noreply.github.com>
+Date:   Sun Mar 13 16:34:13 2022 -0300
+
+    Merge pull request #3 from Walter185/develop
+    
+    v0.2
+
+[33mcommit 4ae26c304f610ab3da57fcda37bc487ba550c56b[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Sun Mar 13 16:33:18 2022 -0300
+
+    v0.2
+
+[33mcommit fc8e2aa0e95c2ac105a284ade7cc590591411537[m
+Merge: f357ba3 1dad453
+Author: Walter Liendo <99099002+Walter185@users.noreply.github.com>
+Date:   Thu Mar 10 23:00:49 2022 -0300
+
+    Merge pull request #2 from Walter185/develop
+    
+    Develop
+
+[33mcommit 1dad453df3e062246247293ee6b1f9d8a40fdc93[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Thu Mar 10 23:00:10 2022 -0300
+
+    v0.1
+
+[33mcommit 98fd2a05a3c61648bd7fa67eacf61140bdcc878a[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Thu Mar 10 00:50:21 2022 -0300
+
+    borrador
+
+[33mcommit f357ba3473371a637351ec9c028ba4cbf2b7462e[m
+Merge: d012ea6 3c25c82
+Author: Walter Liendo <99099002+Walter185@users.noreply.github.com>
+Date:   Thu Mar 10 00:44:45 2022 -0300
+
+    Merge pull request #1 from Walter185/develop
+    
+    Angular
+
+[33mcommit 3c25c82cd9511ebffa1e94f5ca20d074a3eb0aca[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Thu Mar 10 00:43:54 2022 -0300
+
+    Angular
+
+[33mcommit d012ea6c280e25d31b312f0e5ceb2250151be3f7[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Thu Mar 10 00:37:44 2022 -0300
+
+    js
+
+[33mcommit 965c2c82ebf79a60f97395837616a865a9a59831[m
+Author: Walter185 <walter.liendo@gmail.com>
+Date:   Thu Mar 10 00:36:03 2022 -0300
+
+    pull
