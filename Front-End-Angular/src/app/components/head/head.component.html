@@ -12,9 +12,15 @@
     <div>
       <h1>{{persona.nombre}}{{persona.apellido}}</h1>
       <div id="info-company">{{persona.ocupacion}}</div>
-      <div id="info-contact">
-        <span>{{persona.ubicacion}}</span>
-         <a href="Info" class="btn btn-primary" id="btncon">Contacto</a>
+      <div id="info-contact" id="btncon">
+        <p>{{persona.ubicacion}}<p> 
+         <a href="about" class="btn btn-primary" id="boton1">Acerca de mi</a>
+         <a href="experience" class="btn btn-primary" id="boton2">Experiencia</a>
+         <a href="education" class="btn btn-primary" id="boton3">Educacion</a>
+         <a href="Info" class="btn btn-primary" id="boton4">Habilidades</a>
+         <a href="Info" class="btn btn-primary" id="boton5">Proyectos</a>
+         <a href="Info" class="btn btn-primary" id="boton6">Contacto</a>
+         <a class="dropdown-item" href="../../../assets/pdf/cv.txt" class="btn btn-primary" id="boton7" >Descargar en PDF</a>
       </div>
     </div>
     <ul id="info-details">
@@ -26,21 +32,7 @@
       </li>
     </ul>
   </div>
-  <div id="info-action">
-       
-    <a href="#" class="btn btn-light" id="dropdownMenuAction" data-bs-toggle="dropdown" aria-expanded="false">Añadir
-      sección: </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuAction">
-      <li><a class="dropdown-item" href="#">Añadir <strong>Cursos</strong></a></li>
-      <li><a class="dropdown-item" href="#">Añadir <strong>Pasantías</strong></a></li>
-    </ul>
-    <a href="#" class="btn btn-light" id="dropdownMenuAction" data-bs-toggle="dropdown" aria-expanded="false">Más:
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuAction">
-      <li><a class="dropdown-item" href="#">Compartir perfil</a></li>
-      <li><a class="dropdown-item" href="../../../assets/pdf/cv.txt">Descargar en PDF</a></li>
-    </ul>
-  </div>
+ 
 </div>
 </div>
 

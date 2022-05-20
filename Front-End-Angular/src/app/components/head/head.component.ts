@@ -10,6 +10,7 @@ import { Routes } from '@angular/router';
 })
 export class HeadComponent implements OnInit {
   persona:persona = new persona("","","","","","","","","","","","");
+  
 
   constructor(private userService:UserService) { }
 
