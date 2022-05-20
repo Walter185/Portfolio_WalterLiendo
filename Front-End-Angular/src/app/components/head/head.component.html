@@ -1,7 +1,8 @@
 <div class="card mat-card mx-auto" id="card-about">
   <div id="profile-background">
-  <img class="profile-cover" src="{{persona.banner}}" alt="Card image cap">
+  <img class="profile-cover" src="{{persona.banner}}" alt="Card image cap" id="banner">
 </div>
+
 <div id="info" style="padding:16px">
   <div class="img-about mb-3" id="profile-pfpEdit">
     <img src="{{persona.img}}" title="Walter Liendo" id="profile-pfp">
@@ -11,9 +12,15 @@
     <div>
       <h1>{{persona.nombre}}{{persona.apellido}}</h1>
       <div id="info-company">{{persona.ocupacion}}</div>
-      <div id="info-contact">
-        <span>{{persona.ubicacion}}</span>
-        <a routerLink="moreinfo" ria-current="page">Informacion de contacto</a>
+      <div id="info-contact" id="btncon">
+        <p>{{persona.ubicacion}}<p> 
+         <a href="about" class="btn btn-primary" id="boton1">Acerca de mi</a>
+         <a href="experience" class="btn btn-primary" id="boton2">Experiencia</a>
+         <a href="education" class="btn btn-primary" id="boton3">Educacion</a>
+         <a href="Info" class="btn btn-primary" id="boton4">Habilidades</a>
+         <a href="Info" class="btn btn-primary" id="boton5">Proyectos</a>
+         <a href="Info" class="btn btn-primary" id="boton6">Contacto</a>
+         <a class="dropdown-item" href="../../../assets/pdf/cv.txt" class="btn btn-primary" id="boton7" >Descargar en PDF</a>
       </div>
     </div>
     <ul id="info-details">
@@ -25,23 +32,11 @@
       </li>
     </ul>
   </div>
-  <div id="info-action">
-    <a href="#" class="btn btn-primary">Intereses: </a>
-    <a href="#" class="btn btn-light" id="dropdownMenuAction" data-bs-toggle="dropdown" aria-expanded="false">Añadir
-      sección: </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuAction">
-      <li><a class="dropdown-item" href="#">Añadir <strong>Cursos</strong></a></li>
-      <li><a class="dropdown-item" href="#">Añadir <strong>Pasantías</strong></a></li>
-    </ul>
-    <a href="#" class="btn btn-light" id="dropdownMenuAction" data-bs-toggle="dropdown" aria-expanded="false">Más:
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuAction">
-      <li><a class="dropdown-item" href="#">Compartir perfil</a></li>
-      <li><a class="dropdown-item" href="../../../assets/pdf/cv.txt">Descargar en PDF</a></li>
-    </ul>
-  </div>
+ 
 </div>
 </div>
+
+  
   <div class="modal fade" id="editProfile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">

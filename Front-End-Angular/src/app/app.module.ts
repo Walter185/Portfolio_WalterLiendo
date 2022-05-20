@@ -6,7 +6,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { BoardAdminComponent } from './board-admin/board-admin.component';
 import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
@@ -16,7 +15,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeadComponent } from './components/head/head.component';
-import { EducexpComponent } from './components/educexp/educexp.component';
+import { EducationComponent } from './components/education/education.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { fromEventPattern } from 'rxjs';
@@ -28,6 +27,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { CommonModule } from '@angular/common';
 import { MatProgressBar, MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatProgressBarLocation } from '@angular/material/progress-bar';
+import { ExperienceComponent } from './components/experience/experience.component';
 
 
 
@@ -36,7 +36,6 @@ import { MatProgressBarLocation } from '@angular/material/progress-bar';
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    HomeComponent,
     ProfileComponent,
     AboutmeComponent,
     BoardAdminComponent,
@@ -45,9 +44,10 @@ import { MatProgressBarLocation } from '@angular/material/progress-bar';
     PortfolioComponent,
     FooterComponent,
     HeadComponent,
-    EducexpComponent,
+    EducationComponent,
     ProjectComponent,
     SkillsComponent,
+    ExperienceComponent,
 
 
 

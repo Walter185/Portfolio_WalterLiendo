@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../_services/auth.service';
 import { TokenStorageService } from '../_services/token-storage.service';
+import { AppRoutingModule } from '../app-routing.module';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-login',
@@ -15,8 +18,16 @@ export class LoginComponent implements OnInit {
   errorMessage = '';
   roles: string[] = [];
 
-  constructor(private authService: AuthService, private tokenStorage: TokenStorageService) { }
 
+
+  constructor(private authService: AuthService, private tokenStorage: TokenStorageService, private router:Router) { }
+
+
+  gotToRegister(): void {
+    const navigationDetails:String[]=['/register'];
+  this.router.navigate(navigationDetails);
+  }
+  
   ngOnInit(): void {
     if (this.tokenStorage.getToken()) {
       this.isLoggedIn = true;
@@ -41,7 +52,7 @@ export class LoginComponent implements OnInit {
       }
     );
   }
-
+    
   reloadPage(): void {
     window.location.reload();
   }
