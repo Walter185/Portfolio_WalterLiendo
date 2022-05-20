@@ -23,6 +23,7 @@ section {
 
 li {
   list-style: none;
+
 }
 
 #bold {
@@ -140,8 +141,8 @@ img {
 }
 
 #curso {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: small;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
 }
 
 #logoAP {
@@ -168,15 +169,17 @@ footer {
 
 #info-data {
   display: flex;
+
   justify-content: space-between;
 }
 
 
 #profile-pfp {
-  width: 120px;
-  border-radius: 50%;
-  margin-top: -150px;
-  z-index: 1;
+  display:flex;
+  position: relative;
+  width: auto;
+  border-radius: 50% 50%;
+  margin-top: -110px;
   box-shadow: 0px 5px 0px rgba(81, 71, 139, 0.171);
 }
 
@@ -332,11 +335,25 @@ footer {
   
 }
 
-#banner {
-  height: 30%;
-  width: 100%;
+.royalSlider {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  direction: ltr;
+  
+
 }
 
+#main-slideshow #main-slideshow-content{
+  display: flex;
+  width: 100%;
+}
+.royalSlider{
+  float: left;
+}
+#btncon {
+margin-left: 100px;
+}
 #botones {
   margin-top: 10px;
   justify-content: space-around;
@@ -351,16 +368,32 @@ footer {
   border-radius: 10px;
 }
 
+.rsSlide{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  overflow: hidden;
+  height: 100%;
+  width: 100% ;
+  -webkit-animation: 10ms;
+}
+rsContainer{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0,);
+}
 
 #imgproj:hover {
-  border: 2px solid rgb(54, 54, 74);
+  border: 2px solid rgb(153, 153, 156);
 }
 
 .project .content .card .card-img img:hover {
   transform: scale(1.2);
 }
 
-/*footer*/
+/*footer*/  
 .redes2 img {
   display: none;
 }

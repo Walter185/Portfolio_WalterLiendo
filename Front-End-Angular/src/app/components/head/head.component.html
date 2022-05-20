@@ -1,7 +1,8 @@
 <div class="card mat-card mx-auto" id="card-about">
   <div id="profile-background">
-  <img class="profile-cover" src="{{persona.banner}}" alt="Card image cap">
+  <img class="profile-cover" src="{{persona.banner}}" alt="Card image cap" id="banner">
 </div>
+
 <div id="info" style="padding:16px">
   <div class="img-about mb-3" id="profile-pfpEdit">
     <img src="{{persona.img}}" title="Walter Liendo" id="profile-pfp">
@@ -13,6 +14,7 @@
       <div id="info-company">{{persona.ocupacion}}</div>
       <div id="info-contact">
         <span>{{persona.ubicacion}}</span>
+         <a href="Info" class="btn btn-primary" id="btncon">Contacto</a>
       </div>
     </div>
     <ul id="info-details">
@@ -25,7 +27,7 @@
     </ul>
   </div>
   <div id="info-action">
-    <a href="#" class="btn btn-primary">Intereses: </a>
+       
     <a href="#" class="btn btn-light" id="dropdownMenuAction" data-bs-toggle="dropdown" aria-expanded="false">Añadir
       sección: </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuAction">
@@ -41,6 +43,8 @@
   </div>
 </div>
 </div>
+
+  
   <div class="modal fade" id="editProfile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
