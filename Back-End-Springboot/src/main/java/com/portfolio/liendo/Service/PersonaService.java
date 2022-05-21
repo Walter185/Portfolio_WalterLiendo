@@ -1,36 +1,40 @@
 package com.portfolio.liendo.Service;
 
-import com.portfolio.liendo.models.Persona;
-import com.portfolio.liendo.Interface.IPersonaService;
+
 import com.portfolio.liendo.Repository.IPersonaRepository;
+import com.portfolio.liendo.models.Persona;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
-public class ImpPersonaService implements IPersonaService {
-    @Autowired IPersonaRepository ipersonaRepository;
-
-    @Override
-    public List<Persona> getPersona() {
-        List<Persona> persona = ipersonaRepository.findAll();
-        return persona;
+@Transactional
+public class PersonaService{
+    private final IPersonaRepository ipersonaRepository;
+        
+    @Autowired
+    public PersonaService(IPersonaRepository ipersonaRepository){
+        this.ipersonaRepository=ipersonaRepository;
+        
+    }          
+    public Persona addPersona(Persona persona){
+        return ipersonaRepository.save(persona);
     }
-
-    @Override
-    public void savePersona(Persona persona) {
-    ipersonaRepository.save(persona);
+    
+    public List<Persona> buscarPersona(){
+        return ipersonaRepository.findAll();
     }
-
-    @Override
-    public void deletePersona(Long id) {
-    ipersonaRepository.deleteById(id);
+    
+    public Persona editarPersona(Persona persona){
+        return ipersonaRepository.save(persona);
     }
-
-    @Override
-    public Persona findPersona(Long id) {
-    Persona persona = ipersonaRepository.findById(id).orElse(null);
-    return persona;
+    
+    public void borrarPersona(Long id){
+        ipersonaRepository.deleteById(id);
     }
-
+    
+    public Persona buscarPersonaPorId(Long id){
+        return ipersonaRepository.findById(id).orElse(null);
+    }
 }

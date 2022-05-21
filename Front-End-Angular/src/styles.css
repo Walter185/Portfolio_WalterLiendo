@@ -27,7 +27,7 @@ li {
 }
 
 #bold {
-  font-size: medium;
+  font-size: small;
 }
 
 body {
@@ -92,6 +92,9 @@ body {
   align-items: center;
 }
 
+.items-list img {
+  width: 100px;
+}
 /* =============== NavBar =========== */
 
 
@@ -389,8 +392,13 @@ rsContainer{
   -webkit-tap-highlight-color: rgba(0,0,0,0,);
 }
 
+#imgproj {
+  width: 350px;
+}
+
 #imgproj:hover {
-  border: 2px solid rgb(153, 153, 156);
+  border: 2px solid var(--color-primary);
+
 }
 
 .project .content .card .card-img img:hover {

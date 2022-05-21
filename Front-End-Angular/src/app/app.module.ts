@@ -11,7 +11,6 @@ import { BoardAdminComponent } from './board-admin/board-admin.component';
 import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
 import { BoardUserComponent } from './board-user/board-user.component';
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
-import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeadComponent } from './components/head/head.component';
@@ -30,7 +29,6 @@ import { MatProgressBarLocation } from '@angular/material/progress-bar';
 import { ExperienceComponent } from './components/experience/experience.component';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,16 +39,12 @@ import { ExperienceComponent } from './components/experience/experience.componen
     BoardAdminComponent,
     BoardModeratorComponent,
     BoardUserComponent,
-    PortfolioComponent,
     FooterComponent,
     HeadComponent,
     EducationComponent,
     ProjectComponent,
     SkillsComponent,
     ExperienceComponent,
-
-
-
   ],
   imports: [
     BrowserModule,

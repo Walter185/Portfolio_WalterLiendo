@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { persona } from 'src/app/model/persona.model';
 import { UserService } from 'src/app/_services/user.service';
-import { Routes } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-head',
@@ -9,13 +9,16 @@ import { Routes } from '@angular/router';
   styleUrls: ['./head.component.css']
 })
 export class HeadComponent implements OnInit {
-  persona:persona = new persona("","","","","","","","","","","","");
-  
+  public persona:persona | undefined;
+  public editPersona:persona | undefined;
 
-  constructor(private userService:UserService) { }
+  constructor(private userService:UserService, private router:Router) { }
 
   ngOnInit(): void {
     this.userService.getPersona().subscribe(data => {this.persona = data})
   }
-
-}
+  Guardar(persona:persona){
+    this.userService.createPersona(persona).subscribe(data =>{
+      alert("Se agrego con exito");
+      this.router.navigate(["head"]);
+})}}

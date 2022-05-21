@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../_services/user.service';
-import { PortfolioService } from '../_services/portfolio.service';
 
 @Component({
   selector: 'app-board-user',
@@ -11,7 +10,7 @@ export class BoardUserComponent implements OnInit {
 
   content: string;
 
-  constructor(private userService: UserService, private portfolioService:PortfolioService) { }
+  constructor(private userService: UserService) { }
 
   ngOnInit(): void {
     this.userService.getUserBoard().subscribe(
@@ -23,5 +22,6 @@ export class BoardUserComponent implements OnInit {
       }
     );
   }
+
 
 }

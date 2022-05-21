@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from 'src/app/_services/user.service';
 import { persona } from 'src/app/model/persona.model';
+import { UserService } from 'src/app/_services/user.service';
 
 @Component({
   selector: 'app-aboutme',
@@ -8,7 +8,7 @@ import { persona } from 'src/app/model/persona.model';
   styleUrls: ['./aboutme.component.css']
 })
 export class AboutmeComponent implements OnInit {
-    persona:persona = new persona("","","","","","","","","","","","");
+    public persona:persona | undefined
 
   constructor(private userService:UserService) { }
 

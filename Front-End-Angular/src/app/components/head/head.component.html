@@ -1,87 +1,88 @@
-<div class="card mat-card mx-auto" id="card-about">
+<div *ngIf="persona" class="card mat-card mx-auto" id="card-about">
   <div id="profile-background">
-  <img class="profile-cover" src="{{persona.banner}}" alt="Card image cap" id="banner">
-</div>
-
-<div id="info" style="padding:16px">
-  <div class="img-about mb-3" id="profile-pfpEdit">
-    <img src="{{persona.img}}" title="Walter Liendo" id="profile-pfp">
-    <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#editProfile"></i>
+    <img class="profile-cover" src="{{persona.banner}}" alt="Card image cap" id="banner">
   </div>
-  <div id="info-data">
-    <div>
-      <h1>{{persona.nombre}}{{persona.apellido}}</h1>
-      <div id="info-company">{{persona.ocupacion}}</div>
-      <div id="info-contact" id="btncon">
-        <p>{{persona.ubicacion}}<p> 
-         <a href="about" class="btn btn-primary" id="boton1">Acerca de mi</a>
-         <a href="experience" class="btn btn-primary" id="boton2">Experiencia</a>
-         <a href="education" class="btn btn-primary" id="boton3">Educacion</a>
-         <a href="Info" class="btn btn-primary" id="boton4">Habilidades</a>
-         <a href="Info" class="btn btn-primary" id="boton5">Proyectos</a>
-         <a href="Info" class="btn btn-primary" id="boton6">Contacto</a>
-         <a class="dropdown-item" href="../../../assets/pdf/cv.txt" class="btn btn-primary" id="boton7" >Descargar en PDF</a>
-      </div>
+
+  <div id="info" style="padding:16px">
+    <div class="img-about mb-3" id="profile-pfpEdit">
+      <img src="{{persona.img}}" title="Walter Liendo" id="profile-pfp">
+      <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#editProfile"></i>
     </div>
-    <ul id="info-details">
-     <li>
-        <a href={{persona.urlinst}} target="_blank" rel="noopener" style="text-decoration:none;">
-      <img src="{{persona.imginst}}" alt="" class="logo-image">
-          <h5>{{persona.institucion}}</h5>
-        </a>
-      </li>
-    </ul>
-  </div>
- 
-</div>
-</div>
-
-  
-  <div class="modal fade" id="editProfile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Editar perfil</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="mb-3">
-            <label for="nameImput" class="form-label">Nombre y apellido</label>
-            <input class="form-control" type="text" placeholder="Escriba su nombre y apellido"
-              aria-label="Escriba su nombre y apellido">
-          </div>
-          <div class="mb-3">
-            <label for="nameImput" class="form-label">Ocupación</label>
-            <input class="form-control" type="text" placeholder="Ejemplo: Estudiante, Programador en Google."
-              aria-label="Ejemplo: Estudiante, Programador en Google.">
-          </div>
-          <div class="mb-3">
-            <label for="nameImput" class="form-label">Ubicación</label>
-            <input class="form-control" type="text" placeholder="Ejemplo: Buenos Aires, Argentina"
-              aria-label="Ejemplo: Buenos Aires, Argentina">
-          </div>
-          <div class="mb-3">
-            <label for="nameImput" class="form-label">Institución relacionada</label>
-            <input class="form-control" type="text" placeholder="Ejemplo: Universidad Nacional de Buenos Aires"
-              aria-label="Ejemplo: Universidad Nacional de Buenos Aires">
-          </div>
-          <div class="mb-3">
-            <label for="formFile" class="form-label">Editar logo de la institución</label>
-            <input class="form-control" type="file" id="formFile">
-          </div>
-          <div class="mb-3">
-            <label for="formFile" class="form-label">Editar foto de portada</label>
-            <input class="form-control" type="file" id="formFile">
-          </div>
-          <div class="mb-3">
-            <label for="formFile" class="form-label">Editar foto de perfil</label>
-            <input class="form-control" type="file" id="formFile">
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Guardar cambios</button>
+    <div id="info-data">
+      <div>
+        <h1>{{persona.nombre}}{{persona.apellido}}</h1>
+        <div id="info-company">{{persona.ocupacion}}</div>
+        <div id="info-contact" id="btncon">
+          <p>{{persona.ubicacion}}
+          <p>
+            <a href="about" class="btn btn-primary" id="boton1">Acerca de mi</a>
+            <a href="experience" class="btn btn-primary" id="boton2" style="margin-left: 5px;">Experiencia</a>
+            <a href="education" class="btn btn-primary" id="boton3"style="margin-left: 5px;">Educacion</a>
+            <a href="habilidades" class="btn btn-primary" id="boton4"style="margin-left: 5px;">Habilidades</a>
+            <a href="proyectos" class="btn btn-primary" id="boton5" style="margin-left: 5px;">Proyectos</a>
+            <a class="dropdown-item" href="../../../assets/pdf/cv.txt" class="btn btn-primary" id="boton7" style="margin-left: 5px;">Descargar en
+              PDF</a>
         </div>
       </div>
+      <ul id="info-details">
+        <li>
+          <a href={{persona.urlinst}} target="_blank" rel="noopener" style="text-decoration:none;">
+            <img src="{{persona.imginst}}" alt="" class="logo-image">
+            <h5>{{persona.institucion}}</h5>
+          </a>
+        </li>
+      </ul>
     </div>
+
+  </div>
+</div>
+
+
+<div class="modal fade" id="editProfile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Editar perfil</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="{{persona}}" class="form-label">Nombre y apellido</label>
+          <input class="form-control" type="text" placeholder="Escriba su nombre y apellido"
+            aria-label="Escriba su nombre y apellido">
+        </div>
+        <div class="mb-3">
+          <label for="nameImput" class="form-label">Ocupación</label>
+          <input class="form-control" type="text" placeholder="Ejemplo: Estudiante, Programador en Google."
+            aria-label="Ejemplo: Estudiante, Programador en Google.">
+        </div>
+        <div class="mb-3">
+          <label for="nameImput" class="form-label">Ubicación</label>
+          <input class="form-control" type="text" placeholder="Ejemplo: Buenos Aires, Argentina"
+            aria-label="Ejemplo: Buenos Aires, Argentina">
+        </div>
+        <div class="mb-3">
+          <label for="nameImput" class="form-label">Institución relacionada</label>
+          <input class="form-control" type="text" placeholder="Ejemplo: Universidad Nacional de Buenos Aires"
+            aria-label="Ejemplo: Universidad Nacional de Buenos Aires">
+        </div>
+        <div class="mb-3">
+          <label for="formFile" class="form-label">Editar logo de la institución</label>
+          <input class="form-control" type="file" id="formFile">
+        </div>
+        <div class="mb-3">
+          <label for="formFile" class="form-label">Editar foto de portada</label>
+          <input class="form-control" type="file" id="formFile">
+        </div>
+        <div class="mb-3">
+          <label for="formFile" class="form-label">Editar foto de perfil</label>
+          <input class="form-control" type="file" id="formFile">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button (click)="Guardar" class="btn btn-primary">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
 </div>
