@@ -35,5 +35,7 @@ public class PersonaController {
         Persona updatePersona=personaService.editarPersona(persona);
         return new ResponseEntity<>(updatePersona, HttpStatus.OK);
     }
+    
+    
 }
     

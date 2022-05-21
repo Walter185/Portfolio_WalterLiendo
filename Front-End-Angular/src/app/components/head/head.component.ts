@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { persona } from 'src/app/model/persona.model';
 import { UserService } from 'src/app/_services/user.service';
 import { Router } from '@angular/router';
+import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-head',
@@ -10,15 +11,19 @@ import { Router } from '@angular/router';
 })
 export class HeadComponent implements OnInit {
   public persona:persona | undefined;
-  public editPersona:persona | undefined;
 
-  constructor(private userService:UserService, private router:Router) { }
+  constructor(private userService:UserService) { }
 
   ngOnInit(): void {
-    this.userService.getPersona().subscribe(data => {this.persona = data})
+    this.getUser();
   }
-  Guardar(persona:persona){
-    this.userService.createPersona(persona).subscribe(data =>{
-      alert("Se agrego con exito");
-      this.router.navigate(["head"]);
-})}}
+    public getUser():void{ 
+    this.userService.getUser().subscribe({next: (response: persona) => {
+      this.persona=response;
+    },
+    error:(error:HttpErrorResponse)=>{
+      alert(error.message);
+    }
+    })
+  }
+ }

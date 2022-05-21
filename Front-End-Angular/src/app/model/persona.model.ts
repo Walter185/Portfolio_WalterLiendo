@@ -1,5 +1,5 @@
 export interface persona {
-    id?: number;
+    id: number;
     nombre: String;
     apellido: String;
     ocupacion: String;

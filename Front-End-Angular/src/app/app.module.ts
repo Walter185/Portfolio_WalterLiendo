@@ -14,7 +14,6 @@ import { authInterceptorProviders } from './_helpers/auth.interceptor';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeadComponent } from './components/head/head.component';
-import { EducationComponent } from './components/education/education.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { fromEventPattern } from 'rxjs';
@@ -27,6 +26,7 @@ import { CommonModule } from '@angular/common';
 import { MatProgressBar, MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatProgressBarLocation } from '@angular/material/progress-bar';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { EducationComponent } from './components/education/education.component';
 
 
 @NgModule({
@@ -41,10 +41,11 @@ import { ExperienceComponent } from './components/experience/experience.componen
     BoardUserComponent,
     FooterComponent,
     HeadComponent,
-    EducationComponent,
     ProjectComponent,
     SkillsComponent,
     ExperienceComponent,
+    EducationComponent,
+    
   ],
   imports: [
     BrowserModule,
