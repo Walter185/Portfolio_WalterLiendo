@@ -8,21 +8,21 @@
     <br>
     <div>
         <ul class="items-list">
-            <li *ngFor="let education of educationList">
+            <li *ngFor="let education of educations">
                 <div class="data-container">
                     <div class="logo-image">
-                        <img class="logo-image" [src]="education.img" />
+                        <img class="logo-image" src="{{education.imagenEdu}}"/>
                         <div class="list-info">
                         </div>
                     </div>
                 </div>
                 <h5 class="timeline-date">
                     <i class="fa-regular fa-calendar"></i>
-                    {{education.start}} - {{education.end}}
+                    {{education.fechaEdu}} 
                 </h5>
                 <div class="title-button">
-                    <h2 class="timeline-title" id="bold">{{education.school}}<br>
-                        {{education.degree}} Detalle: {{education.otherInformation}}</h2>
+                    <h2 class="timeline-title" id="bold">{{education.imagenEdu}}<br>
+                        {{education.tituloEdu}} Detalle: {{education.descEdu}}</h2>
                     <div class="d-block">
                         <span style="padding-right: 5px;"><i class="fa-solid fa-edit" data-bs-toggle="modal"
                                 data-bs-target="#editeducation"></i></span>

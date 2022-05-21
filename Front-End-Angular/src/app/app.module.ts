@@ -44,8 +44,8 @@ import { EducationComponent } from './components/education/education.component';
     ProjectComponent,
     SkillsComponent,
     ExperienceComponent,
-    EducationComponent,
-    
+    EducationComponent
+
   ],
   imports: [
     BrowserModule,
