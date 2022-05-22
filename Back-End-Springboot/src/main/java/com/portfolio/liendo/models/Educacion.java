@@ -12,19 +12,23 @@ public class Educacion {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idEdu;
     private String tituloEdu;
-    private int fechaEdu;
-    private String descEdu;
-    private String imagenEdu;
+    private int startEdu;
+    private int endEdu;
+    private String schoolEdu;
+    private String imgEdu;
+    private String otherEdu;
 
     public Educacion() {
     }
 
-    public Educacion(Long idEdu, String tituloEdu, int fechaEdu, String descEdu, String imagenEdu) {
+    public Educacion(Long idEdu, String tituloEdu, int startEdu, int endEdu, String schoolEdu, String imgEdu, String otherEdu) {
         this.idEdu = idEdu;
         this.tituloEdu = tituloEdu;
-        this.fechaEdu = fechaEdu;
-        this.descEdu = descEdu;
-        this.imagenEdu = imagenEdu;
+        this.startEdu = startEdu;
+        this.endEdu = endEdu;
+        this.schoolEdu = schoolEdu;
+        this.imgEdu = imgEdu;
+        this.otherEdu = otherEdu;
     }
 
     public Long getIdEdu() {
@@ -43,28 +47,45 @@ public class Educacion {
         this.tituloEdu = tituloEdu;
     }
 
-    public int getFechaEdu() {
-        return fechaEdu;
+    public int getStartEdu() {
+        return startEdu;
     }
 
-    public void setFechaEdu(int fechaEdu) {
-        this.fechaEdu = fechaEdu;
+    public void setStartEdu(int startEdu) {
+        this.startEdu = startEdu;
     }
 
-    public String getDescEdu() {
-        return descEdu;
+    public int getEndEdu() {
+        return endEdu;
     }
 
-    public void setDescEdu(String descEdu) {
-        this.descEdu = descEdu;
+    public void setEndEdu(int endEdu) {
+        this.endEdu = endEdu;
     }
 
-    public String getImagenEdu() {
-        return imagenEdu;
+    public String getSchoolEdu() {
+        return schoolEdu;
     }
 
-    public void setImagenEdu(String imagenEdu) {
-        this.imagenEdu = imagenEdu;
+    public void setSchoolEdu(String schoolEdu) {
+        this.schoolEdu = schoolEdu;
+    }
+
+    public String getImgEdu() {
+        return imgEdu;
+    }
+
+    public void setImgEdu(String imgEdu) {
+        this.imgEdu = imgEdu;
+    }
+
+    public String getOtherEdu() {
+        return otherEdu;
+    }
+
+    public void setOtherEdu(String otherEdu) {
+        this.otherEdu = otherEdu;
     }
     
+
 }

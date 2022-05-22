@@ -25,13 +25,13 @@
        </div>
         <ul class="navbar-nav mr-auto" routerLinkActive="active">
       <li class="nav-item" *ngIf="showAdminBoard">
-        <a href="/admin" class="nav-link" routerLink="admin">Inicio ADMINISTRADOR</a>
+        <a href="/admin" class="nav-link" routerLink="admin">Administrador (EDITABLE)</a>
       </li>
       <li class="nav-item" *ngIf="showModeratorBoard">
         <a href="/mod" class="nav-link" routerLink="mod">MODERADOR</a>
       </li>
       <li class="nav-item">
-      <a href="/user" class="nav-link" *ngIf="isLoggedIn" routerLink="user">Inicio USER</a>
+      <a href="/user" class="nav-link" *ngIf="isLoggedIn" routerLink="user">Usuario BASICO</a>
       </li>
     </ul>
     <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">

@@ -1,7 +1,9 @@
 export interface Education{
     idEdu:number;
     tituloEdu:String;
-    fechaEdu:number;
-    descEdu:number;
-    imagenEdu:String;
+    startEdu:number;
+    endEdu:number;
+    schoolEdu:number;
+    imgEdu:String;
+    otherEdu:String;
 }
