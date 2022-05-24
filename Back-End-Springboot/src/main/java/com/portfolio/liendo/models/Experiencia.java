@@ -13,19 +13,24 @@ public class Experiencia {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idExp;
     private String tituloExp;
-    private int fechaExp;
-    private String descExp;
-    private String imagenExp;
-
+    private int startExp;
+    private int endtExp;
+    private String lugarExp;
+    private String imgExp;
+    private String otherExp;
+    
+    
     public Experiencia() {
     }
 
-    public Experiencia(Long idExp, String tituloExp, int fechaExp, String descExp, String imagenExp) {
+    public Experiencia(Long idExp, String tituloExp, int startExp, int endtExp, String lugarExp, String imgExp, String otherExp) {
         this.idExp = idExp;
         this.tituloExp = tituloExp;
-        this.fechaExp = fechaExp;
-        this.descExp = descExp;
-        this.imagenExp = imagenExp;
+        this.startExp = startExp;
+        this.endtExp = endtExp;
+        this.lugarExp = lugarExp;
+        this.imgExp = imgExp;
+        this.otherExp = otherExp;
     }
 
     public Long getIdExp() {
@@ -44,30 +49,45 @@ public class Experiencia {
         this.tituloExp = tituloExp;
     }
 
-    public int getFechaExp() {
-        return fechaExp;
+    public int getStartExp() {
+        return startExp;
     }
 
-    public void setFechaExp(int fechaExp) {
-        this.fechaExp = fechaExp;
+    public void setStartExp(int startExp) {
+        this.startExp = startExp;
     }
 
-    public String getDescExp() {
-        return descExp;
+    public int getEndtExp() {
+        return endtExp;
     }
 
-    public void setDescExp(String descExp) {
-        this.descExp = descExp;
+    public void setEndtExp(int endtExp) {
+        this.endtExp = endtExp;
     }
 
-    public String getImagenExp() {
-        return imagenExp;
+    public String getLugarExp() {
+        return lugarExp;
     }
 
-    public void setImagenExp(String imagenExp) {
-        this.imagenExp = imagenExp;
+    public void setLugarExp(String lugarExp) {
+        this.lugarExp = lugarExp;
     }
 
- 
+    public String getImgExp() {
+        return imgExp;
+    }
 
+    public void setImgExp(String imgExp) {
+        this.imgExp = imgExp;
+    }
+
+    public String getOtherExp() {
+        return otherExp;
+    }
+
+    public void setOtherExp(String otherExp) {
+        this.otherExp = otherExp;
+    }
+
+    
 }
