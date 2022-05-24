@@ -3,7 +3,7 @@ export interface Education{
     tituloEdu:String;
     startEdu:number;
     endEdu:number;
-    schoolEdu:number;
+    schoolEdu:String;
     imgEdu:String;
     otherEdu:String;
 }

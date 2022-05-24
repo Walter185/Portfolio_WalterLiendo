@@ -33,6 +33,21 @@ public class Persona implements Serializable {
     @Size(min=1, max=50, message="no cumple con la longitud")
     private String ocupacion;
     
+      @Size(min=1, max=300, message="no cumple con la longitud")
+    private String institucion;
+      
+        @Size(min=1, max=300, message="no cumple con la longitud")
+    private String urlinst;  
+        
+    @Size(min=1, max=300, message="no cumple con la longitud")
+    private String imginst;    
+        
+      @Size(min=1, max=60, message="no cumple con la longitud")
+    private String email;
+    
+       @Size(min=1, max=60, message="no cumple con la longitud")
+    private String telefono;  
+      
     @Size(min=1, max=300, message="no cumple con la longitud")
     private String img;
     
@@ -44,21 +59,8 @@ public class Persona implements Serializable {
     
     @Size(min=1, max=80, message="no cumple con la longitud")
     private String ubicacion;
-        @Size(min=1, max=300, message="no cumple con la longitud")
-    private String institucion;
+   
         
-    @Size(min=1, max=300, message="no cumple con la longitud")
-    private String urlinst;
-    
-    @Size(min=1, max=300, message="no cumple con la longitud")
-    private String imginst;
-    
-    @Size(min=1, max=60, message="no cumple con la longitud")
-    private String email;
-    
-    @Size(min=1, max=60, message="no cumple con la longitud")
-    private String telefono;
-    
     @OneToMany(fetch = FetchType.LAZY, mappedBy= "idEdu")
     private List<Educacion> educacionList;
     @OneToMany(fetch = FetchType.LAZY, mappedBy= "idSkill")
@@ -69,18 +71,26 @@ public class Persona implements Serializable {
     public Persona() {
     }
 
-    public Persona(Long id, String nombre, String apellido, String img, String banner, String about, String institucion, String urlinst, String imginst, String email, String telefono) {
+    public Persona(Long id, String nombre, String apellido, String ocupacion,
+            String institucion, String urlinst, String imginst, String telefono,
+            String img, String banner, String about, String ubicaion) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.img = img;
-        this.banner = banner;
-        this.about = about;
+        this.ocupacion= ocupacion;
         this.institucion = institucion;
         this.urlinst = urlinst;
         this.imginst = imginst;
         this.email = email;
         this.telefono = telefono;
+        this.img = img;
+        this.banner = banner;
+        this.about = about;
+        this.ubicacion = ubicacion;
+ 
+        
+        
+        
     }
 
     public Long getId() {
@@ -113,38 +123,6 @@ public class Persona implements Serializable {
 
     public void setOcupacion(String ocupacion) {
         this.ocupacion = ocupacion;
-    }
-
-    public String getImg() {
-        return img;
-    }
-
-    public void setImg(String img) {
-        this.img = img;
-    }
-
-    public String getBanner() {
-        return banner;
-    }
-
-    public void setBanner(String banner) {
-        this.banner = banner;
-    }
-
-    public String getAbout() {
-        return about;
-    }
-
-    public void setAbout(String about) {
-        this.about = about;
-    }
-
-    public String getUbicacion() {
-        return ubicacion;
-    }
-
-    public void setUbicacion(String ubicacion) {
-        this.ubicacion = ubicacion;
     }
 
     public String getInstitucion() {
@@ -186,7 +164,40 @@ public class Persona implements Serializable {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
+
+    public String getBanner() {
+        return banner;
+    }
+
+    public void setBanner(String banner) {
+        this.banner = banner;
+    }
+
+    public String getAbout() {
+        return about;
+    }
+
+    public void setAbout(String about) {
+        this.about = about;
+    }
+
+    public String getUbicacion() {
+        return ubicacion;
+    }
+
+    public void setUbicacion(String ubicacion) {
+        this.ubicacion = ubicacion;
+    }
     
+
 
  
     

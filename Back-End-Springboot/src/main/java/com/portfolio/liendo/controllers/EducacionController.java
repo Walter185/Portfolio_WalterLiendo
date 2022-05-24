@@ -39,13 +39,13 @@ public class EducacionController {
     }
     
     @PostMapping("/add")
-    public ResponseEntity<Educacion> crearEducacion(@RequestBody Educacion educacion){
-        Educacion nuevaEducacion= educacionService.addEducacion(educacion);
+    public ResponseEntity<Educacion>crearEducacion(@RequestBody Educacion educacion){
+        Educacion nuevaEducacion=educacionService.addEducacion(educacion);
         return new ResponseEntity<>(nuevaEducacion,HttpStatus.CREATED); 
     }
     
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<?> borrarEducacion(@PathVariable Long id){
+    public ResponseEntity<?>borrarEducacion(@PathVariable("id") Long id){
         educacionService.borrarEducacion(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }

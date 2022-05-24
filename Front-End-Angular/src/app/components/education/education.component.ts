@@ -28,19 +28,21 @@ export class EducationComponent implements OnInit {
       },
     error:(error:HttpErrorResponse)=>{
       alert(error.message);
-    }})
+    },
+  });
   }
   public onOpenModal(mode:String, education?:Education):void{
     const container=document.getElementById('main-container');
     const button=document.createElement('button');
+    button.type='button';
     button.style.display='none';
     button.setAttribute('data-toggle','modal');
     if(mode==='add'){
       button.setAttribute('data-target','#addEducationModal');
     } else if(mode==='delete'){
       this.deleteEducation=education;
-      button.setAttribute('data-target', '#deleteEducationModal');
-    } else if(mode==='edit'){
+      button.setAttribute('data-target','#deleteEducationModal');
+    } else if (mode==='edit'){
       this.editEducation=education;
       button.setAttribute('data-target','#editEducationModal');
     }
@@ -48,7 +50,7 @@ export class EducationComponent implements OnInit {
     button.click();
     }
 
-    public onAddEducation(addForm:NgForm){
+    public onAddEducation(addForm:NgForm):void{
       document.getElementById('add-education-form')?.click();
       this.educationService.addEducation(addForm.value).subscribe({
         next:(response:Education) =>{
@@ -77,7 +79,7 @@ export class EducationComponent implements OnInit {
     })
   }
 
-  public onDeleteEducation(idEdu:number):void{
+  public onDeleteEducation(idEdu: number):void{
     this.educationService.deleteEducation(idEdu).subscribe({
       next: (response:void) =>{
         console.log(response);
