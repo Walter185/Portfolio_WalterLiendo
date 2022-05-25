@@ -1,5 +1,5 @@
 <!-- Experience -->
-<section class="card mat-card mx-auto" id="experience">
+<section class="card mat-card mx-auto" id="experience" main-container>
     <div class="title-button">
         <h3 class="content-title">Experiencia</h3>
         <i class="fa-solid fa-plus" data-bs-toggle="modal" data-bs-target="#addexperience"></i>
@@ -9,21 +9,21 @@
     <br>
     <div>
         <ul class="items-list">
-            <li *ngFor="let experience of experienceList">
+            <li *ngFor="let experience of experiences">
                 <div class="data-container">
                     <div class="logo-image">
-                        <img class="logo-image" [src]="experience.img" />
+                        <img class="logo-image" src="{{experience.imgExp}}" />
                         <div class="list-info">
                         </div>
                     </div>
                 </div>
                 <h5 class="timeline-date">
                     <i class="fa-regular fa-calendar"></i>
-                    {{experience.start}} - {{experience.end}}
+                    {{experience.startExp}}-{{experience.endExp}}
                 </h5>
                 <div class="title-button">
-                    <h2 class="timeline-title" id="bold">{{experience.company}}<br>
-                        {{experience.position}} - ({{experience.mode}}) Detalle: {{experience.detail}}</h2>
+                    <h2 class="timeline-title" id="bold">{{experience.tituloExp}}<br><b>{{experience.lugarExp}}</b>
+                     Detalle: {{experience.otherExp}}</h2>
                     <div class="d-block">
                         <span style="padding-right: 5px;"><i class="fa-solid fa-edit" data-bs-toggle="modal"
                                 data-bs-target="#editeducation"></i></span>

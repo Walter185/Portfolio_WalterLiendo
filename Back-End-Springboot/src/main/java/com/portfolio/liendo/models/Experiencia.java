@@ -14,7 +14,7 @@ public class Experiencia {
     private Long idExp;
     private String tituloExp;
     private int startExp;
-    private int endtExp;
+    private int endExp;
     private String lugarExp;
     private String imgExp;
     private String otherExp;
@@ -23,11 +23,11 @@ public class Experiencia {
     public Experiencia() {
     }
 
-    public Experiencia(Long idExp, String tituloExp, int startExp, int endtExp, String lugarExp, String imgExp, String otherExp) {
+    public Experiencia(Long idExp, String tituloExp, int startExp, int endExp, String lugarExp, String imgExp, String otherExp) {
         this.idExp = idExp;
         this.tituloExp = tituloExp;
         this.startExp = startExp;
-        this.endtExp = endtExp;
+        this.endExp =endExp;
         this.lugarExp = lugarExp;
         this.imgExp = imgExp;
         this.otherExp = otherExp;
@@ -57,12 +57,12 @@ public class Experiencia {
         this.startExp = startExp;
     }
 
-    public int getEndtExp() {
-        return endtExp;
+    public int getEndExp() {
+        return endExp;
     }
 
-    public void setEndtExp(int endtExp) {
-        this.endtExp = endtExp;
+    public void setEndExp(int endExp) {
+        this.endExp = endExp;
     }
 
     public String getLugarExp() {

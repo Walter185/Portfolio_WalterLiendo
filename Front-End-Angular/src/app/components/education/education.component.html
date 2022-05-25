@@ -1,9 +1,9 @@
 
 <!--educacion-->
-<section class="card mat-card mx-auto" id="education">
+<section class="card mat-card mx-auto" id="education" main-container>
     <div class="title-button">
         <h3 class="content-title">Educación</h3>
-        <i class="fa-solid fa-plus" data-bs-toggle="modal" (click)="onOpenModal('add')" data-bs-target="#addeducation"></i>
+        <i class="fa-solid fa-plus" data-bs-toggle="modal" (click)="onOpenModal('add')" data-bs-target="#addEducationModal"></i>
     </div>
     <div class="title-button">
     </div>
@@ -26,9 +26,9 @@
                     <h2 class="timeline-title" id="bold">{{education.tituloEdu}}<br><b>{{education.schoolEdu}}</b>
                         Detalle: {{education.otherEdu}}</h2>
                     <div class="d-block">
-                        <span style="padding-right: 5px;"><i class="fa-solid fa-edit" data-bs-toggle="modal"
-                                data-bs-target="#editeducation"></i></span>
-                        <span style="padding-right: 5px;"><i class="fa-solid fa-trash" data-bs-toggle="modal"
+                        <a style="padding-right: 5px;" (click)="onOpenModal('edit',education)"></a><i class="fa-solid fa-edit" data-bs-toggle="modal"
+                                data-bs-target="#editEducationModal"></i>
+                        <span style="padding-right: 5px;" (click)="onOpenModal('delete',education)"><i class="fa-solid fa-trash" data-bs-toggle="modal"
                                 data-bs-target="#eliminar"></i></span>
                     </div>
                 </div>
@@ -38,144 +38,178 @@
 </section>
 
 
-
-<div class="modal fade" id="editeducation" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+<div class="modal fade" 
+id="addEducationModal"
+tabindex="-1"
+role="dialog"
+aria-labelledby="addEducationModalLabel" 
+aria-hidden="true" 
+>
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Modificar educación</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title" id="addEducationModalLabel">Añadir educación</h5>
+                <button 
+                type="button" 
+                class="btn-close" 
+                data-bs-dismiss="modal" 
+                aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
             </div>
             <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                        <label for="nameImput" class="form-label">Título</label>
-                        <input class="form-control" type="text" placeholder="Escriba título conseguido"
-                            aria-label="Escriba título conseguido">
+                <form #addForm="ngForm" (ngSubmit)="onAddEducation(addForm)">
+                    <div class="form-group">
+                        <label for="tituloEdu"class="form-label">
+                        Título</label>
+                        <input 
+                        class="form-control" 
+                        ngModel
+                        id="tituloEdu"
+                        name="tituloEdu"
+                        type="text" placeholder="Escriba título conseguido"
+                        aria-label="Escriba título conseguido"
+                        required>
                     </div>
-                    <div class="mb-3">
-                        <label for="nameImput" class="form-label">Escuela</label>
-                        <input class="form-control" type="text" placeholder="Escriba la escuela donde lo consiguió"
-                            aria-label="Escriba la escuela donde lo consiguió">
+                    <div class="form-group">
+                        <label for="schoolEdu" class="form-label">
+                        Escuela</label>
+                        <input 
+                        class="form-control" 
+                        ngModel
+                        id="schoolEdu"
+                        name="schoolEdu"
+                        type="text"
+                        placeholder="Escriba la escuela donde lo consiguió"
+                        aria-label="Escriba la escuela donde lo consiguió"
+                        required>
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">¿Otra información que quiera
+                    <div class="form-group">
+                        <label for="imgEdu" class="form-label">Imagen</label>
+                        <input 
+                        class="form-control" 
+                        type="text" 
+                        ngModel
+                        name="imgEdu"
+                        id="imgEdu"
+                        placeholder="Escriba la url donde lo consiguió"
+                        aria-label="Escriba la url donde lo consiguió"
+                        required>
+                    </div>
+                    <div class="form-group">
+                        <label for="otherEdu" class="form-label">¿Otra información que quiera
                             agregar?</label>
-                        <textarea class="form-control" rows="3"></textarea>
+                        <textarea 
+                        class="form-control" 
+                        rows="3"
+                        ngModel
+                        name="otherEdu"
+                        id="otherEdu"
+                        required></textarea>
                     </div>
                     <br>
-                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="submit" class="btn btn-primary ms-2">Guardar cambios</button>
+                    <div class="modal-footer">
+                        <button 
+                        type="button" 
+                        id="add-education-form" 
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                                              Cancelar</button>
+                        <button 
+                        (click)="onAddEducation(editForm.value)" 
+                        data-bs-dismiss="modal"
+                        class="btn btn-primary">
+                            Guardar cambios
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
 
-<div class="modal fade" id="addeducation" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+<div 
+class="modal fade" 
+id="editEducationModal" 
+tabindex="-1"
+role="dialog"
+aria-labelledby="educationEditModalLabel" 
+aria-hidden="true"
+>
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Añadir educación</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title" id="updateEducationModalLabel">
+                    Modificar educacion {{editEducation?.tituloEdu}}
+                </h5>
+                <button type="button" 
+                class="close" 
+                data-dismiss="modal" 
+                aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                        <label for="nameImput" class="form-label">Título</label>
-                        <input class="form-control" type="text" placeholder="Escriba título conseguido"
-                            aria-label="Escriba título conseguido">
+                <form #editForm="ngForm">
+                    <div class="form-group">
+                        <label for="tituloEdu"
+                        class="form-label">
+                        Cargo</label>
+                        <input 
+                        class="form-control" 
+                        type="text" 
+                        ngModel="{{editEducation?.tituloEdu}}" 
+                        name="tituloEdu"
+                        id="tituloEdu">
                     </div>
-                    <div class="mb-3">
-                        <label for="nameImput" class="form-label">Escuela</label>
-                        <input class="form-control" type="text" placeholder="Escriba la escuela donde lo consiguió"
-                            aria-label="Escriba la escuela donde lo consiguió">
+                    <div class="form-group">
+                        <label for="schoolEdu" class="form-label">Lugar de estudio</label>
+                        <input 
+                        class="form-control" 
+                        type="text"
+                        ngModel="{{editEducation?.schoolEdu}}"
+                        name="schoolEdu" 
+                        id="schoolEdu">
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">¿Otra información que quiera
-                            agregar?</label>
-                        <textarea class="form-control" rows="3"></textarea>
+                    <div class="form-group">
+                        <label for="startEdu" class="form-label">Año de inicio</label>
+                        <input 
+                        class="form-control" 
+                        type="text"
+                        ngModel="{{editEducation?.startEdu}}"
+                        name="startEdu" 
+                        id="startEdu">
+                    </div>
+                    <div class="form-group">
+                        <label for="endEdu" class="form-label">Año de finalizacion</label>
+                        <input 
+                        class="form-control" 
+                        type="text"
+                        ngModel="{{editEducation?.endEdu}}"
+                        name="endEdu" 
+                        id="ednEdu">
+                       
                     </div>
                     <br>
-                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="submit" class="btn btn-primary ms-2">Guardar cambios</button>
+                    <div class="modal-footer">
+                        <button 
+                        type="button" 
+                        id="" 
+                        class="btn btn-secondary"
+                        data-dismiss="modal">
+                            Cancelar</button>
+                        <button 
+                        (click)="onUpdateEducation(editForm.value)" 
+                        data-dismiss="modal"
+                        class="btn btn-primary">
+                            Guardar cambios
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
 
-<div class="modal fade" id="editexperience" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Modificar experiencia laboral</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                        <label for="nameImput" class="form-label">Cargo</label>
-                        <input class="form-control" type="text" placeholder="Escriba cargo conseguido"
-                            aria-label="Escriba cargo conseguido">
-                    </div>
-                    <div class="mb-3">
-                        <label for="nameImput" class="form-label">Lugar de trabajo</label>
-                        <input class="form-control" type="text" placeholder="Escriba la empresa donde trabajó"
-                            aria-label="Escriba la empresa donde trabajó">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Describa las actividades del cargo
-                            que
-                            ocupaba</label>
-                        <textarea class="form-control" rows="3"></textarea>
-                    </div>
-                    <br>
-                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="submit" class="btn btn-primary ms-2">Guardar cambios</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="addexperience" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Añadir experiencia laboral</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                        <label for="nameImput" class="form-label">Cargo</label>
-                        <input class="form-control" type="text" placeholder="Escriba cargo conseguido"
-                            aria-label="Escriba cargo conseguido">
-                    </div>
-                    <div class="mb-3">
-                        <label for="nameImput" class="form-label">Lugar de trabajo</label>
-                        <input class="form-control" type="text" placeholder="Escriba la empresa donde trabajó"
-                            aria-label="Escriba la empresa donde trabajó">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Describa las actividades del cargo
-                            que
-                            ocupaba</label>
-                        <textarea class="form-control" rows="3"></textarea>
-                    </div>
-                    <br>
-                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="submit" class="btn btn-primary ms-2">Guardar cambios</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
 
 <!-- Modal -->
 <div class="modal fade" id="eliminar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
