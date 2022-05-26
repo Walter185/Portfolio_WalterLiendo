@@ -1,6 +1,6 @@
 
 <!--educacion-->
-<div class="card mat-card mx-auto" id="education" main-container>
+<div class="card mat-card mx-auto" main-container>
     <div class="title-button">
         <h3 class="content-title">Educación</h3>
         <i class="fa-solid fa-plus" data-bs-toggle="modal" (click)="onOpenModal('add')" data-bs-target="#addEducationModal"></i>
@@ -289,18 +289,18 @@ aria-hidden="true"
 
 <div 
 class="modal fade" 
-data-bs-target="#deleteModelLabel"
+data-bs-target="#deleteModalLabel"
 data-bs-toggle="modal"
 id="deleteEducationModal" 
 tabindex="-1"  
 role="dialog"
-aria-labelledby="deleteModelLabel" 
+aria-labelledby="deleteModalLabel" 
 aria-hidden="true"
 >
     <div class="modal-dialog" role="dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="deleteModelLabel">Eliminar elemento</h5>
+                <h5 class="modal-title" id="deleteModalLabel">Eliminar elemento</h5>
                 <button 
                 type="button" 
                 class="close" 
