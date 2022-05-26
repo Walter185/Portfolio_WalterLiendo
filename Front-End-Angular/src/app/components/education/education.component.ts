@@ -5,7 +5,7 @@ import { Education } from 'src/app/model/education.model';
 import { EducationService } from 'src/app/_services/education.service'
 
 @Component({
-  selector: 'app-educexp',
+  selector: 'app-education',
   templateUrl: './education.component.html',
   styleUrls: ['./education.component.css']
 })
@@ -28,8 +28,8 @@ export class EducationComponent implements OnInit {
       },
     error:(error:HttpErrorResponse)=>{
       alert(error.message);
-    },
-  });
+    }
+  })
   }
   public onOpenModal(mode:String, education?:Education):void{
     const container=document.getElementById('main-container');
