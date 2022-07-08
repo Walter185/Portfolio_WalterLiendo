@@ -32,8 +32,9 @@ import com.portfolio.liendo.repository.UserRepository;
 import com.portfolio.liendo.security.jwt.JwtUtils;
 import com.portfolio.liendo.security.services.UserDetailsImpl;
 
-@CrossOrigin(origins = "*", maxAge = 3600)
+
 @RestController
+@CrossOrigin(origins = "https://frontendliendo.web.app")
 @RequestMapping("/api/auth")
 public class AuthController {
   @Autowired
@@ -105,12 +106,6 @@ public class AuthController {
           Role adminRole = roleRepository.findByName(ERole.ROLE_ADMIN)
               .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
           roles.add(adminRole);
-
-          break;
-        case "mod":
-          Role modRole = roleRepository.findByName(ERole.ROLE_MODERATOR)
-              .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
-          roles.add(modRole);
 
           break;
         default:
